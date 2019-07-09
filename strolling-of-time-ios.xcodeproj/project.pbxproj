@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A862B5A2065222A8C550614 /* Pods-strolling-of-time-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosUITests/Pods-strolling-of-time-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		628DA600066B889C077A20F3 /* Pods-strolling-of-time-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosTests.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosTests/Pods-strolling-of-time-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		011785293EA4F31E4698B478 /* Pods-strolling-of-time-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosUITests/Pods-strolling-of-time-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		61B12F27DDEB7B4EDDBF4894 /* Pods-strolling-of-time-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosUITests/Pods-strolling-of-time-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6BD7AD9222D4A2FC00F82F9B /* strolling-of-time-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "strolling-of-time-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD7AD9522D4A2FC00F82F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BD7AD9722D4A2FC00F82F9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,13 +52,13 @@
 		6BD7ADB122D4A2FE00F82F9B /* strolling-of-time-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "strolling-of-time-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD7ADB522D4A2FE00F82F9B /* strolling_of_time_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strolling_of_time_iosUITests.swift; sourceTree = "<group>"; };
 		6BD7ADB722D4A2FE00F82F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E8F62F1CAD19B30614C62C4 /* Pods-strolling-of-time-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-ios.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-ios/Pods-strolling-of-time-ios.release.xcconfig"; sourceTree = "<group>"; };
-		7B503F1EDCBC270F5991088D /* Pods-strolling-of-time-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosTests/Pods-strolling-of-time-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
-		966B349E578EFA4C7ABD1F2A /* Pods-strolling-of-time-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-ios.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-ios/Pods-strolling-of-time-ios.debug.xcconfig"; sourceTree = "<group>"; };
-		9E7B6E63CA7B40EF9CFF37AD /* Pods-strolling-of-time-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosUITests/Pods-strolling-of-time-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		88C8A54005F3FA0C33BDB9E2 /* Pods-strolling-of-time-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosTests.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosTests/Pods-strolling-of-time-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		A550F94167129339F83ABAB3 /* Pods-strolling-of-time-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-ios.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-ios/Pods-strolling-of-time-ios.release.xcconfig"; sourceTree = "<group>"; };
 		BDACB20DF6D9AB85D3A32EFB /* Pods_strolling_of_time_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF22302E8006FA55122F00FA /* Pods_strolling_of_time_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8F16BE9B99F2E45A44DDB5 /* Pods_strolling_of_time_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D844F3DE08A9446A20FF672A /* Pods-strolling-of-time-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosTests/Pods-strolling-of-time-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DEE7246ACF5FEFC9F82CD8C5 /* Pods-strolling-of-time-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-ios.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-ios/Pods-strolling-of-time-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +96,8 @@
 				6BD7ADA922D4A2FE00F82F9B /* strolling-of-time-iosTests */,
 				6BD7ADB422D4A2FE00F82F9B /* strolling-of-time-iosUITests */,
 				6BD7AD9322D4A2FC00F82F9B /* Products */,
-				7814CF30F274534E2CE8F475 /* Pods */,
 				AE11B4D17BD9984B3EFD87D6 /* Frameworks */,
+				7ACFB6ABEBDD0250849031E8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,17 +142,16 @@
 			path = "strolling-of-time-iosUITests";
 			sourceTree = "<group>";
 		};
-		7814CF30F274534E2CE8F475 /* Pods */ = {
+		7ACFB6ABEBDD0250849031E8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				966B349E578EFA4C7ABD1F2A /* Pods-strolling-of-time-ios.debug.xcconfig */,
-				6E8F62F1CAD19B30614C62C4 /* Pods-strolling-of-time-ios.release.xcconfig */,
-				7B503F1EDCBC270F5991088D /* Pods-strolling-of-time-iosTests.debug.xcconfig */,
-				628DA600066B889C077A20F3 /* Pods-strolling-of-time-iosTests.release.xcconfig */,
-				3A862B5A2065222A8C550614 /* Pods-strolling-of-time-iosUITests.debug.xcconfig */,
-				9E7B6E63CA7B40EF9CFF37AD /* Pods-strolling-of-time-iosUITests.release.xcconfig */,
+				DEE7246ACF5FEFC9F82CD8C5 /* Pods-strolling-of-time-ios.debug.xcconfig */,
+				A550F94167129339F83ABAB3 /* Pods-strolling-of-time-ios.release.xcconfig */,
+				D844F3DE08A9446A20FF672A /* Pods-strolling-of-time-iosTests.debug.xcconfig */,
+				88C8A54005F3FA0C33BDB9E2 /* Pods-strolling-of-time-iosTests.release.xcconfig */,
+				61B12F27DDEB7B4EDDBF4894 /* Pods-strolling-of-time-iosUITests.debug.xcconfig */,
+				011785293EA4F31E4698B478 /* Pods-strolling-of-time-iosUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -237,13 +236,16 @@
 				TargetAttributes = {
 					6BD7AD9122D4A2FC00F82F9B = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					6BD7ADA522D4A2FE00F82F9B = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 6BD7AD9122D4A2FC00F82F9B;
 					};
 					6BD7ADB022D4A2FE00F82F9B = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 6BD7AD9122D4A2FC00F82F9B;
 					};
 				};
@@ -476,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -531,7 +533,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -543,7 +545,7 @@
 		};
 		6BD7ADBB22D4A2FE00F82F9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 966B349E578EFA4C7ABD1F2A /* Pods-strolling-of-time-ios.debug.xcconfig */;
+			baseConfigurationReference = DEE7246ACF5FEFC9F82CD8C5 /* Pods-strolling-of-time-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,14 +557,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nexters.wiw.strolling-of-time-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		6BD7ADBC22D4A2FE00F82F9B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E8F62F1CAD19B30614C62C4 /* Pods-strolling-of-time-ios.release.xcconfig */;
+			baseConfigurationReference = A550F94167129339F83ABAB3 /* Pods-strolling-of-time-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -574,14 +576,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nexters.wiw.strolling-of-time-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		6BD7ADBE22D4A2FE00F82F9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B503F1EDCBC270F5991088D /* Pods-strolling-of-time-iosTests.debug.xcconfig */;
+			baseConfigurationReference = D844F3DE08A9446A20FF672A /* Pods-strolling-of-time-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -595,7 +597,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nexters.wiw.strolling-of-time-iosTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/strolling-of-time-ios.app/strolling-of-time-ios";
 			};
@@ -603,7 +605,7 @@
 		};
 		6BD7ADBF22D4A2FE00F82F9B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 628DA600066B889C077A20F3 /* Pods-strolling-of-time-iosTests.release.xcconfig */;
+			baseConfigurationReference = 88C8A54005F3FA0C33BDB9E2 /* Pods-strolling-of-time-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -617,7 +619,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nexters.wiw.strolling-of-time-iosTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/strolling-of-time-ios.app/strolling-of-time-ios";
 			};
@@ -625,7 +627,7 @@
 		};
 		6BD7ADC122D4A2FE00F82F9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A862B5A2065222A8C550614 /* Pods-strolling-of-time-iosUITests.debug.xcconfig */;
+			baseConfigurationReference = 61B12F27DDEB7B4EDDBF4894 /* Pods-strolling-of-time-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -638,7 +640,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nexters.wiw.strolling-of-time-iosUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "strolling-of-time-ios";
 			};
@@ -646,7 +648,7 @@
 		};
 		6BD7ADC222D4A2FE00F82F9B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E7B6E63CA7B40EF9CFF37AD /* Pods-strolling-of-time-iosUITests.release.xcconfig */;
+			baseConfigurationReference = 011785293EA4F31E4698B478 /* Pods-strolling-of-time-iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -659,7 +661,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nexters.wiw.strolling-of-time-iosUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "strolling-of-time-ios";
 			};
