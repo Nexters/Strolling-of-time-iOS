@@ -1,0 +1,4 @@
+language: swift
+osx_image: xcode10  
+script:
+- xcodebuild -workspace WORKSPACEPATH -scheme SCHEME -derivedDataPath BUILDPATH -destination 'platform=iOS Simulator,OS=12.0,name=iPhone 7' -enableCodeCoverage YES clean build test
