@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		231A62874AE1A6EF7BA7DDD9 /* Pods_strolling_of_time_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF22302E8006FA55122F00FA /* Pods_strolling_of_time_iosUITests.framework */; };
-		6B3BB242DE2B9DF61B2D2CB3 /* Pods_strolling_of_time_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8F16BE9B99F2E45A44DDB5 /* Pods_strolling_of_time_iosTests.framework */; };
+		3CA67FCABE74B7ACB64CE5CE /* Pods_strolling_of_time_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF0FC8FACF7231C3D14F885 /* Pods_strolling_of_time_iosUITests.framework */; };
+		5527649CE310124751C2D0A6 /* Pods_strolling_of_time_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D916B93B8BB12B052D1E59B /* Pods_strolling_of_time_ios.framework */; };
 		6BD7AD9622D4A2FC00F82F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7AD9522D4A2FC00F82F9B /* AppDelegate.swift */; };
 		6BD7AD9822D4A2FC00F82F9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7AD9722D4A2FC00F82F9B /* ViewController.swift */; };
 		6BD7AD9B22D4A2FC00F82F9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD7AD9922D4A2FC00F82F9B /* Main.storyboard */; };
@@ -16,7 +16,7 @@
 		6BD7ADA022D4A2FE00F82F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD7AD9E22D4A2FE00F82F9B /* LaunchScreen.storyboard */; };
 		6BD7ADAB22D4A2FE00F82F9B /* strolling_of_time_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7ADAA22D4A2FE00F82F9B /* strolling_of_time_iosTests.swift */; };
 		6BD7ADB622D4A2FE00F82F9B /* strolling_of_time_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7ADB522D4A2FE00F82F9B /* strolling_of_time_iosUITests.swift */; };
-		FA36B20C0F3E2108AB08C6DE /* Pods_strolling_of_time_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDACB20DF6D9AB85D3A32EFB /* Pods_strolling_of_time_ios.framework */; };
+		9F5656B934B94903A55518AF /* Pods_strolling_of_time_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9BF4C1DB071BEAAEF24C7B /* Pods_strolling_of_time_iosTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		011785293EA4F31E4698B478 /* Pods-strolling-of-time-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosUITests/Pods-strolling-of-time-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
-		61B12F27DDEB7B4EDDBF4894 /* Pods-strolling-of-time-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosUITests/Pods-strolling-of-time-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CF0FC8FACF7231C3D14F885 /* Pods_strolling_of_time_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8DA208D9774D91E67EDD49 /* Pods-strolling-of-time-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosTests/Pods-strolling-of-time-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		20515091B1C2AFED93597F18 /* Pods-strolling-of-time-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-ios.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-ios/Pods-strolling-of-time-ios.release.xcconfig"; sourceTree = "<group>"; };
+		46447C83366A28136E3E89C8 /* Pods-strolling-of-time-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosUITests/Pods-strolling-of-time-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6BD7AD9222D4A2FC00F82F9B /* strolling-of-time-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "strolling-of-time-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD7AD9522D4A2FC00F82F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BD7AD9722D4A2FC00F82F9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,13 +54,11 @@
 		6BD7ADB122D4A2FE00F82F9B /* strolling-of-time-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "strolling-of-time-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD7ADB522D4A2FE00F82F9B /* strolling_of_time_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strolling_of_time_iosUITests.swift; sourceTree = "<group>"; };
 		6BD7ADB722D4A2FE00F82F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88C8A54005F3FA0C33BDB9E2 /* Pods-strolling-of-time-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosTests.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosTests/Pods-strolling-of-time-iosTests.release.xcconfig"; sourceTree = "<group>"; };
-		A550F94167129339F83ABAB3 /* Pods-strolling-of-time-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-ios.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-ios/Pods-strolling-of-time-ios.release.xcconfig"; sourceTree = "<group>"; };
-		BDACB20DF6D9AB85D3A32EFB /* Pods_strolling_of_time_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF22302E8006FA55122F00FA /* Pods_strolling_of_time_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC8F16BE9B99F2E45A44DDB5 /* Pods_strolling_of_time_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D844F3DE08A9446A20FF672A /* Pods-strolling-of-time-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosTests/Pods-strolling-of-time-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DEE7246ACF5FEFC9F82CD8C5 /* Pods-strolling-of-time-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-ios.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-ios/Pods-strolling-of-time-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		6D916B93B8BB12B052D1E59B /* Pods_strolling_of_time_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7C168094409F84CC85A8FC /* Pods-strolling-of-time-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosUITests/Pods-strolling-of-time-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D3893B25B05D00F62F74C209 /* Pods-strolling-of-time-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-ios.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-ios/Pods-strolling-of-time-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		DE9BF4C1DB071BEAAEF24C7B /* Pods_strolling_of_time_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA02168818E57DF3B6A68E3 /* Pods-strolling-of-time-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosTests.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosTests/Pods-strolling-of-time-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA36B20C0F3E2108AB08C6DE /* Pods_strolling_of_time_ios.framework in Frameworks */,
+				5527649CE310124751C2D0A6 /* Pods_strolling_of_time_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B3BB242DE2B9DF61B2D2CB3 /* Pods_strolling_of_time_iosTests.framework in Frameworks */,
+				9F5656B934B94903A55518AF /* Pods_strolling_of_time_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,13 +82,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				231A62874AE1A6EF7BA7DDD9 /* Pods_strolling_of_time_iosUITests.framework in Frameworks */,
+				3CA67FCABE74B7ACB64CE5CE /* Pods_strolling_of_time_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F2AD8A7BED8608A84F2F097 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D916B93B8BB12B052D1E59B /* Pods_strolling_of_time_ios.framework */,
+				DE9BF4C1DB071BEAAEF24C7B /* Pods_strolling_of_time_iosTests.framework */,
+				1CF0FC8FACF7231C3D14F885 /* Pods_strolling_of_time_iosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6BD7AD8922D4A2FC00F82F9B = {
 			isa = PBXGroup;
 			children = (
@@ -96,8 +106,8 @@
 				6BD7ADA922D4A2FE00F82F9B /* strolling-of-time-iosTests */,
 				6BD7ADB422D4A2FE00F82F9B /* strolling-of-time-iosUITests */,
 				6BD7AD9322D4A2FC00F82F9B /* Products */,
-				AE11B4D17BD9984B3EFD87D6 /* Frameworks */,
 				7ACFB6ABEBDD0250849031E8 /* Pods */,
+				5F2AD8A7BED8608A84F2F097 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,24 +155,14 @@
 		7ACFB6ABEBDD0250849031E8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DEE7246ACF5FEFC9F82CD8C5 /* Pods-strolling-of-time-ios.debug.xcconfig */,
-				A550F94167129339F83ABAB3 /* Pods-strolling-of-time-ios.release.xcconfig */,
-				D844F3DE08A9446A20FF672A /* Pods-strolling-of-time-iosTests.debug.xcconfig */,
-				88C8A54005F3FA0C33BDB9E2 /* Pods-strolling-of-time-iosTests.release.xcconfig */,
-				61B12F27DDEB7B4EDDBF4894 /* Pods-strolling-of-time-iosUITests.debug.xcconfig */,
-				011785293EA4F31E4698B478 /* Pods-strolling-of-time-iosUITests.release.xcconfig */,
+				D3893B25B05D00F62F74C209 /* Pods-strolling-of-time-ios.debug.xcconfig */,
+				20515091B1C2AFED93597F18 /* Pods-strolling-of-time-ios.release.xcconfig */,
+				1F8DA208D9774D91E67EDD49 /* Pods-strolling-of-time-iosTests.debug.xcconfig */,
+				DEA02168818E57DF3B6A68E3 /* Pods-strolling-of-time-iosTests.release.xcconfig */,
+				46447C83366A28136E3E89C8 /* Pods-strolling-of-time-iosUITests.debug.xcconfig */,
+				BD7C168094409F84CC85A8FC /* Pods-strolling-of-time-iosUITests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		AE11B4D17BD9984B3EFD87D6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BDACB20DF6D9AB85D3A32EFB /* Pods_strolling_of_time_ios.framework */,
-				CC8F16BE9B99F2E45A44DDB5 /* Pods_strolling_of_time_iosTests.framework */,
-				BF22302E8006FA55122F00FA /* Pods_strolling_of_time_iosUITests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BD7ADBA22D4A2FE00F82F9B /* Build configuration list for PBXNativeTarget "strolling-of-time-ios" */;
 			buildPhases = (
-				90A8225B73ACD67C1E00495A /* [CP] Check Pods Manifest.lock */,
+				C4F7DBB7537823DB3505D2F7 /* [CP] Check Pods Manifest.lock */,
 				6BD7AD8E22D4A2FC00F82F9B /* Sources */,
 				6BD7AD8F22D4A2FC00F82F9B /* Frameworks */,
 				6BD7AD9022D4A2FC00F82F9B /* Resources */,
@@ -190,7 +190,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BD7ADBD22D4A2FE00F82F9B /* Build configuration list for PBXNativeTarget "strolling-of-time-iosTests" */;
 			buildPhases = (
-				30747D1263EF5F80346A04F5 /* [CP] Check Pods Manifest.lock */,
+				730ECBD7F0C8E3C64B2012F0 /* [CP] Check Pods Manifest.lock */,
 				6BD7ADA222D4A2FE00F82F9B /* Sources */,
 				6BD7ADA322D4A2FE00F82F9B /* Frameworks */,
 				6BD7ADA422D4A2FE00F82F9B /* Resources */,
@@ -209,7 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BD7ADC022D4A2FE00F82F9B /* Build configuration list for PBXNativeTarget "strolling-of-time-iosUITests" */;
 			buildPhases = (
-				5792A5F0F79BF48DCF0DEA4E /* [CP] Check Pods Manifest.lock */,
+				4EA3AFAA0C04B3779B48A99D /* [CP] Check Pods Manifest.lock */,
 				6BD7ADAD22D4A2FE00F82F9B /* Sources */,
 				6BD7ADAE22D4A2FE00F82F9B /* Frameworks */,
 				6BD7ADAF22D4A2FE00F82F9B /* Resources */,
@@ -298,29 +298,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30747D1263EF5F80346A04F5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-strolling-of-time-iosTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5792A5F0F79BF48DCF0DEA4E /* [CP] Check Pods Manifest.lock */ = {
+		4EA3AFAA0C04B3779B48A99D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -342,7 +320,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		90A8225B73ACD67C1E00495A /* [CP] Check Pods Manifest.lock */ = {
+		730ECBD7F0C8E3C64B2012F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-strolling-of-time-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4F7DBB7537823DB3505D2F7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -545,7 +545,7 @@
 		};
 		6BD7ADBB22D4A2FE00F82F9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEE7246ACF5FEFC9F82CD8C5 /* Pods-strolling-of-time-ios.debug.xcconfig */;
+			baseConfigurationReference = D3893B25B05D00F62F74C209 /* Pods-strolling-of-time-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -564,7 +564,7 @@
 		};
 		6BD7ADBC22D4A2FE00F82F9B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A550F94167129339F83ABAB3 /* Pods-strolling-of-time-ios.release.xcconfig */;
+			baseConfigurationReference = 20515091B1C2AFED93597F18 /* Pods-strolling-of-time-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -583,7 +583,7 @@
 		};
 		6BD7ADBE22D4A2FE00F82F9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D844F3DE08A9446A20FF672A /* Pods-strolling-of-time-iosTests.debug.xcconfig */;
+			baseConfigurationReference = 1F8DA208D9774D91E67EDD49 /* Pods-strolling-of-time-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -605,7 +605,7 @@
 		};
 		6BD7ADBF22D4A2FE00F82F9B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88C8A54005F3FA0C33BDB9E2 /* Pods-strolling-of-time-iosTests.release.xcconfig */;
+			baseConfigurationReference = DEA02168818E57DF3B6A68E3 /* Pods-strolling-of-time-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -627,7 +627,7 @@
 		};
 		6BD7ADC122D4A2FE00F82F9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61B12F27DDEB7B4EDDBF4894 /* Pods-strolling-of-time-iosUITests.debug.xcconfig */;
+			baseConfigurationReference = 46447C83366A28136E3E89C8 /* Pods-strolling-of-time-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -648,7 +648,7 @@
 		};
 		6BD7ADC222D4A2FE00F82F9B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 011785293EA4F31E4698B478 /* Pods-strolling-of-time-iosUITests.release.xcconfig */;
+			baseConfigurationReference = BD7C168094409F84CC85A8FC /* Pods-strolling-of-time-iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
