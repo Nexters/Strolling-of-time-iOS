@@ -1,0 +1,5 @@
+language: swift
+osx_image: xcode10
+script:
+  - pod install
+  - xcodebuild -workspace strolling-of-time-ios.xcworkspace -scheme strolling-of-time-ios -derivedDataPath BuildFolder/ -destination 'platform=iOS Simulator,OS=12.2,name=iPhone 7' -enableCodeCoverage YES clean build test
