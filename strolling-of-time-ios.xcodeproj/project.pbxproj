@@ -47,6 +47,9 @@
 		6B1814CF22D5F74600F97504 /* PatternTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternTimer.swift; sourceTree = "<group>"; };
 		6B1814D122D5F85000F97504 /* EstimatedTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatedTime.swift; sourceTree = "<group>"; };
 		6B1814D322D5F94300F97504 /* TimeUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUnit.swift; sourceTree = "<group>"; };
+		6B1814D522D6140100F97504 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6B1814D622D6142200F97504 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6B1814D722D6144100F97504 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6BD7AD9222D4A2FC00F82F9B /* strolling-of-time-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "strolling-of-time-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD7AD9522D4A2FC00F82F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BD7AD9722D4A2FC00F82F9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +122,7 @@
 			children = (
 				6B1814D122D5F85000F97504 /* EstimatedTime.swift */,
 				6B1814D322D5F94300F97504 /* TimeUnit.swift */,
+				6B1814D622D6142200F97504 /* README.md */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -126,6 +130,7 @@
 		6B1814CC22D5F6EB00F97504 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				6B1814D522D6140100F97504 /* README.md */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 		6B1814CD22D5F6F400F97504 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6BD7AD9722D4A2FC00F82F9B /* ViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -140,6 +146,7 @@
 		6B1814CE22D5F70900F97504 /* Usecases */ = {
 			isa = PBXGroup;
 			children = (
+				6B1814D722D6144100F97504 /* README.md */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -174,7 +181,6 @@
 				6B1814CB22D5F6DE00F97504 /* Model */,
 				6B1814CA22D5F6D400F97504 /* Domain */,
 				6BD7AD9522D4A2FC00F82F9B /* AppDelegate.swift */,
-				6BD7AD9722D4A2FC00F82F9B /* ViewController.swift */,
 				6BD7AD9922D4A2FC00F82F9B /* Main.storyboard */,
 				6BD7AD9C22D4A2FE00F82F9B /* Assets.xcassets */,
 				6BD7AD9E22D4A2FE00F82F9B /* LaunchScreen.storyboard */,
