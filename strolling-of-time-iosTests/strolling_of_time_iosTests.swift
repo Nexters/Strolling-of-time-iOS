@@ -9,7 +9,7 @@
 import XCTest
 @testable import strolling_of_time_ios
 
-class strolling_of_time_iosTests: XCTestCase {
+class StrollingOfTimeiOSTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
