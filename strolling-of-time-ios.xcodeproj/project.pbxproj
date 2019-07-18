@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3CA67FCABE74B7ACB64CE5CE /* Pods_strolling_of_time_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF0FC8FACF7231C3D14F885 /* Pods_strolling_of_time_iosUITests.framework */; };
-		5527649CE310124751C2D0A6 /* Pods_strolling_of_time_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D916B93B8BB12B052D1E59B /* Pods_strolling_of_time_ios.framework */; };
+		11F7CEBD85298FD318EF2E6B /* Pods_strolling_of_time_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B29A72297AFFA8318532A32 /* Pods_strolling_of_time_ios.framework */; };
+		4F78A0911C1DE46E62B1F0B3 /* Pods_strolling_of_time_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FBBCCB776F93D8AA17BCD1 /* Pods_strolling_of_time_iosTests.framework */; };
 		6B1814D022D5F74600F97504 /* PatternTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1814CF22D5F74600F97504 /* PatternTimer.swift */; };
 		6B1814D222D5F85000F97504 /* EstimatedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1814D122D5F85000F97504 /* EstimatedTime.swift */; };
 		6B1814D422D5F94300F97504 /* TimeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1814D322D5F94300F97504 /* TimeUnit.swift */; };
@@ -19,7 +19,7 @@
 		6BD7ADA022D4A2FE00F82F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD7AD9E22D4A2FE00F82F9B /* LaunchScreen.storyboard */; };
 		6BD7ADAB22D4A2FE00F82F9B /* strolling_of_time_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7ADAA22D4A2FE00F82F9B /* strolling_of_time_iosTests.swift */; };
 		6BD7ADB622D4A2FE00F82F9B /* strolling_of_time_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7ADB522D4A2FE00F82F9B /* strolling_of_time_iosUITests.swift */; };
-		9F5656B934B94903A55518AF /* Pods_strolling_of_time_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9BF4C1DB071BEAAEF24C7B /* Pods_strolling_of_time_iosTests.framework */; };
+		9E9EC8D889FDBF274E6BD52A /* Pods_strolling_of_time_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A69224D87104B37F290F2C /* Pods_strolling_of_time_iosUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1CF0FC8FACF7231C3D14F885 /* Pods_strolling_of_time_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DA208D9774D91E67EDD49 /* Pods-strolling-of-time-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosTests/Pods-strolling-of-time-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		20515091B1C2AFED93597F18 /* Pods-strolling-of-time-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-ios.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-ios/Pods-strolling-of-time-ios.release.xcconfig"; sourceTree = "<group>"; };
 		46447C83366A28136E3E89C8 /* Pods-strolling-of-time-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosUITests/Pods-strolling-of-time-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,10 +62,11 @@
 		6BD7ADB122D4A2FE00F82F9B /* strolling-of-time-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "strolling-of-time-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD7ADB522D4A2FE00F82F9B /* strolling_of_time_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strolling_of_time_iosUITests.swift; sourceTree = "<group>"; };
 		6BD7ADB722D4A2FE00F82F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D916B93B8BB12B052D1E59B /* Pods_strolling_of_time_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81A69224D87104B37F290F2C /* Pods_strolling_of_time_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B29A72297AFFA8318532A32 /* Pods_strolling_of_time_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7C168094409F84CC85A8FC /* Pods-strolling-of-time-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosUITests/Pods-strolling-of-time-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D2FBBCCB776F93D8AA17BCD1 /* Pods_strolling_of_time_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3893B25B05D00F62F74C209 /* Pods-strolling-of-time-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-ios.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-ios/Pods-strolling-of-time-ios.debug.xcconfig"; sourceTree = "<group>"; };
-		DE9BF4C1DB071BEAAEF24C7B /* Pods_strolling_of_time_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA02168818E57DF3B6A68E3 /* Pods-strolling-of-time-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosTests.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosTests/Pods-strolling-of-time-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5527649CE310124751C2D0A6 /* Pods_strolling_of_time_ios.framework in Frameworks */,
+				11F7CEBD85298FD318EF2E6B /* Pods_strolling_of_time_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F5656B934B94903A55518AF /* Pods_strolling_of_time_iosTests.framework in Frameworks */,
+				4F78A0911C1DE46E62B1F0B3 /* Pods_strolling_of_time_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CA67FCABE74B7ACB64CE5CE /* Pods_strolling_of_time_iosUITests.framework in Frameworks */,
+				9E9EC8D889FDBF274E6BD52A /* Pods_strolling_of_time_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,9 +101,9 @@
 		5F2AD8A7BED8608A84F2F097 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6D916B93B8BB12B052D1E59B /* Pods_strolling_of_time_ios.framework */,
-				DE9BF4C1DB071BEAAEF24C7B /* Pods_strolling_of_time_iosTests.framework */,
-				1CF0FC8FACF7231C3D14F885 /* Pods_strolling_of_time_iosUITests.framework */,
+				9B29A72297AFFA8318532A32 /* Pods_strolling_of_time_ios.framework */,
+				D2FBBCCB776F93D8AA17BCD1 /* Pods_strolling_of_time_iosTests.framework */,
+				81A69224D87104B37F290F2C /* Pods_strolling_of_time_iosUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,6 +231,7 @@
 				6BD7AD8E22D4A2FC00F82F9B /* Sources */,
 				6BD7AD8F22D4A2FC00F82F9B /* Frameworks */,
 				6BD7AD9022D4A2FC00F82F9B /* Resources */,
+				3B96DDE022E07549007F9CCC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -353,6 +354,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3B96DDE022E07549007F9CCC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
 		4EA3AFAA0C04B3779B48A99D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -607,7 +625,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M75SXEJ86F;
+				DEVELOPMENT_TEAM = Y4XABUQ539;
 				INFOPLIST_FILE = "strolling-of-time-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -626,7 +644,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M75SXEJ86F;
+				DEVELOPMENT_TEAM = Y4XABUQ539;
 				INFOPLIST_FILE = "strolling-of-time-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
