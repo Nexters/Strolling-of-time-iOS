@@ -18,7 +18,7 @@ endif
 	-derivedDataPath BuildFolder/ \
 	-destination 'platform=iOS Simulator,OS=${OS_VERSION},name=iPhone 7' \
 	-enableCodeCoverage YES \
-	clean build test \
+	build test \
 	CODE_SIGN_IDENTITY="" \
 	CODE_SIGNING_REQUIRED=NO \
 	ONLY_ACTIVE_ARCH=NO \
