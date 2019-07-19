@@ -12,3 +12,5 @@ before_install:
   - pod install --repo-update
 script:
   - make lint build
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
