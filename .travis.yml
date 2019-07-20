@@ -9,12 +9,14 @@ addons:
     packages:
       - swiftlint
 before_install:
+  - rvm use $RVM_RUBY_VERSION
+install:
   - gem install cocoapods --pre
-  - gem install slather
   - pod install --repo-update
+  - gem install slather
 script:
   - make build
 after_success:
-  - echo $PWD && ls -al
   - slather
-  - bash <(curl -s https://codecov.io/bash) -f ./report/cobertura.xml -X coveragepy -X gcov -X xcode
+  - bash <(curl -s https://codecov.io/bash) # -f ./report/cobertura.xml -X coveragepy -X gcov -X xcode
+  - echo $PWD && ls -al report
