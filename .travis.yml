@@ -15,5 +15,5 @@ before_install:
 script:
   - make lint build
 after_success:
-  - slather
+  - mkdir report & slather
   - bash <(curl -s https://codecov.io/bash) -f report/cobertura.xml -X coveragepy -X gcov -X xcode
