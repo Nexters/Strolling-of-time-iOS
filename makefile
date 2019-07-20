@@ -24,3 +24,7 @@ endif
 	ONLY_ACTIVE_ARCH=NO \
 	-quiet
 .PHONY: build
+
+coverage:
+	slather coverage --html --scheme strolling-of-time-ios strolling-of-time-ios.xcodeproj
+.PHONY: coverage

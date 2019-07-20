@@ -9,8 +9,14 @@ addons:
       - swiftlint
 before_install:
   - gem install cocoapods --pre
+  - gem install slather
   - pod install --repo-update
 script:
   - make lint build
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -X xcodellvm
+  - slather
+  - bash <(curl -s https://codecov.io/bash) \
+    -f report/cobertura.xml \
+    -X coveragepy \
+    -X gcov \
+    -X xcode

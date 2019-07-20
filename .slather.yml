@@ -1,0 +1,5 @@
+coverage_service: cobertura_xml
+xcodeproj: strolling-of-time-ios.xcodeproj
+scheme: strolling-of-time-ios
+workspace: strolling-of-time-ios.xcworkspace
+output_directory: ./report
