@@ -3,6 +3,7 @@ osx_image: xcode10.2
 cache:
   bundler: true
   cocoapods: true
+  slather: true
 addons:
   homebrew:
     packages:
@@ -15,8 +16,4 @@ script:
   - make lint build
 after_success:
   - slather
-  - bash <(curl -s https://codecov.io/bash) \
-    -f report/cobertura.xml \
-    -X coveragepy \
-    -X gcov \
-    -X xcode
+  - bash <(curl -s https://codecov.io/bash) -f report/cobertura.xml -X coveragepy -X gcov -X xcode
