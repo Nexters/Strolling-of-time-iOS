@@ -13,21 +13,10 @@ before_install:
 install:
   - gem install cocoapods --pre
   - pod install --repo-update
-  - gem install slather
+  - gem install slather -v '~>2.4.7'
 script:
-  # - make build
-  - xcodebuild \
-	-workspace strolling-of-time-ios.xcworkspace \
-	-configuration Debug \
-	-scheme strolling-of-time-ios \
-	-destination 'platform=iOS Simulator,OS=${OS_VERSION},name=iPhone 7' \
-	-enableCodeCoverage YES \
-	test \
-	CODE_SIGN_IDENTITY="" \
-	CODE_SIGNING_REQUIRED=NO \
-	ONLY_ACTIVE_ARCH=NO \
-  -quiet
-  - slather
+  - make build
 after_success:
+  - slather
   - bash <(curl -s https://codecov.io/bash) -f ./report/cobertura.xml -X coveragepy -X gcov -X xcode
   - echo $PWD && ls -al report
