@@ -70,3 +70,5 @@ fastlane/test_output
 # MacOS
 .DS_Store
 BuildFolder
+report
+.vscode

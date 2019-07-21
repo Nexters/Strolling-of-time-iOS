@@ -9,7 +9,7 @@
 import XCTest
 @testable import strolling_of_time_ios
 
-class strolling_of_time_iosTests: XCTestCase {
+class StrollingOfTimeiOSTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -18,17 +18,25 @@ class strolling_of_time_iosTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTimeUnit(){
+        var estimatedTimes = [EstimatedTime]()
+        let oneSeconds = EstimatedTime(time: 1, unit: TimeUnit.SECONDS)
+        let twoMinutes = EstimatedTime(time: 2, unit: TimeUnit.MINUTES)
+        let threeHours = EstimatedTime(time: 3, unit: TimeUnit.HOURS)
+        
+//        print(oneSeconds.toString(), oneSeconds.toSeconds())
+//        print(twoMinutes.toString(), twoMinutes.toSeconds())
+//        print(threeHours.toString(), threeHours.toSeconds())
+        
+        estimatedTimes.append(oneSeconds)
+        estimatedTimes.append(twoMinutes)
+        estimatedTimes.append(threeHours)
+        
+        let timer = PatternTimer(estimatedTimes: estimatedTimes)
+        timer.run()
+        
+        XCTAssert(oneSeconds.toSeconds() == 1)
+        XCTAssert(twoMinutes.toSeconds() == 2 * 60)
+        XCTAssert(threeHours.toSeconds() == 3 * 3600)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
