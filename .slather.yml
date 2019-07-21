@@ -1,5 +1,7 @@
-coverage_service: cobertura_xml
+ci_service: travis_ci
+coverage_service: coveralls
 xcodeproj: strolling-of-time-ios.xcodeproj
 scheme: strolling-of-time-ios
 workspace: strolling-of-time-ios.xcworkspace
+source_directory: strolling-of-time-ios
 output_directory: report

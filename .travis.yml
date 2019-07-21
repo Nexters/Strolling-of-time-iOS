@@ -1,4 +1,5 @@
 language: swift
+os: osx
 osx_image: xcode10.2
 cache:
   bundler: true
@@ -11,9 +12,10 @@ addons:
 before_install:
   - rvm use $RVM_RUBY_VERSION
 install:
-  - gem install cocoapods --pre
-  - pod install --repo-update
-  - gem install slather -v '~>2.4.7'
+  - gem install slather --no-document --quiet
+  - gem install cocoapods -v '1.6.1'
+  - gem install coveralls
+  - pod repo update
 script:
   - make build
 after_success:
