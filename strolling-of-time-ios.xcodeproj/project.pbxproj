@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,7 @@
 		6B1814D222D5F85000F97504 /* EstimatedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1814D122D5F85000F97504 /* EstimatedTime.swift */; };
 		6B1814D422D5F94300F97504 /* TimeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1814D322D5F94300F97504 /* TimeUnit.swift */; };
 		6BD7AD9622D4A2FC00F82F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7AD9522D4A2FC00F82F9B /* AppDelegate.swift */; };
-		6BD7AD9822D4A2FC00F82F9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7AD9722D4A2FC00F82F9B /* ViewController.swift */; };
+		6BD7AD9822D4A2FC00F82F9B /* MQTTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7AD9722D4A2FC00F82F9B /* MQTTViewController.swift */; };
 		6BD7AD9B22D4A2FC00F82F9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD7AD9922D4A2FC00F82F9B /* Main.storyboard */; };
 		6BD7AD9D22D4A2FE00F82F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BD7AD9C22D4A2FE00F82F9B /* Assets.xcassets */; };
 		6BD7ADA022D4A2FE00F82F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD7AD9E22D4A2FE00F82F9B /* LaunchScreen.storyboard */; };
@@ -52,7 +52,7 @@
 		6B1814D722D6144100F97504 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6BD7AD9222D4A2FC00F82F9B /* strolling-of-time-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "strolling-of-time-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD7AD9522D4A2FC00F82F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6BD7AD9722D4A2FC00F82F9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BD7AD9722D4A2FC00F82F9B /* MQTTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTViewController.swift; sourceTree = "<group>"; };
 		6BD7AD9A22D4A2FC00F82F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BD7AD9C22D4A2FE00F82F9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BD7AD9F22D4A2FE00F82F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 		6B1814CD22D5F6F400F97504 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6BD7AD9722D4A2FC00F82F9B /* ViewController.swift */,
+				6BD7AD9722D4A2FC00F82F9B /* MQTTViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -231,6 +231,7 @@
 				6BD7AD8E22D4A2FC00F82F9B /* Sources */,
 				6BD7AD8F22D4A2FC00F82F9B /* Frameworks */,
 				6BD7AD9022D4A2FC00F82F9B /* Resources */,
+				88C92FF3835446568AA8501C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -397,6 +398,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		88C92FF3835446568AA8501C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-strolling-of-time-ios/Pods-strolling-of-time-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-strolling-of-time-ios/Pods-strolling-of-time-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-strolling-of-time-ios/Pods-strolling-of-time-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C4F7DBB7537823DB3505D2F7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -428,7 +446,7 @@
 			files = (
 				6B1814D022D5F74600F97504 /* PatternTimer.swift in Sources */,
 				6B1814D222D5F85000F97504 /* EstimatedTime.swift in Sources */,
-				6BD7AD9822D4A2FC00F82F9B /* ViewController.swift in Sources */,
+				6BD7AD9822D4A2FC00F82F9B /* MQTTViewController.swift in Sources */,
 				6B1814D422D5F94300F97504 /* TimeUnit.swift in Sources */,
 				6BD7AD9622D4A2FC00F82F9B /* AppDelegate.swift in Sources */,
 			);

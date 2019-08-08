@@ -32,9 +32,6 @@ class strolling_of_time_iosTests: XCTestCase {
         estimatedTimes.append(twoMinutes)
         estimatedTimes.append(threeHours)
         
-        let timer = PatternTimer(estimatedTimes: estimatedTimes)
-        timer.run()
-        
         XCTAssert(oneSeconds.toSeconds() == 1)
         XCTAssert(twoMinutes.toSeconds() == 2 * 60)
         XCTAssert(threeHours.toSeconds() == 3 * 3600)
