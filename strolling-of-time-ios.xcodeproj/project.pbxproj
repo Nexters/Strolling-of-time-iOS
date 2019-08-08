@@ -153,6 +153,16 @@
 			path = AddMember;
 			sourceTree = "<group>";
 		};
+		3BE6EFB322FC02CC007C46BF /* CreateGroup */ = {
+			isa = PBXGroup;
+			children = (
+				6BD7AD9722D4A2FC00F82F9B /* ViewController.swift */,
+				3B2CF82822F9DDDE00BA91BE /* CreateGroupViewController.swift */,
+				3B2CF82F22F9E09F00BA91BE /* CreateGroupMemberCollectionViewCell.swift */,
+			);
+			path = CreateGroup;
+			sourceTree = "<group>";
+		};
 		5F2AD8A7BED8608A84F2F097 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,10 +203,8 @@
 		6B1814CD22D5F6F400F97504 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3BE6EFB322FC02CC007C46BF /* CreateGroup */,
 				3B2CF83A22F9EFF700BA91BE /* AddMember */,
-				6BD7AD9722D4A2FC00F82F9B /* ViewController.swift */,
-				3B2CF82822F9DDDE00BA91BE /* CreateGroupViewController.swift */,
-				3B2CF82F22F9E09F00BA91BE /* CreateGroupMemberCollectionViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
