@@ -14,6 +14,12 @@
 		3B2CF83222F9E18500BA91BE /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CF83122F9E18500BA91BE /* UICollectionView+Extension.swift */; };
 		3B2CF83422F9E19200BA91BE /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CF83322F9E19200BA91BE /* UITableView+Extension.swift */; };
 		3B2CF83722F9E1CE00BA91BE /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CF83622F9E1CE00BA91BE /* NibLoadable.swift */; };
+		3B2CF83922F9EFEC00BA91BE /* AddMemeberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CF83822F9EFEC00BA91BE /* AddMemeberViewController.swift */; };
+		3B2CF83C22F9F01B00BA91BE /* AddMemberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CF83B22F9F01B00BA91BE /* AddMemberCollectionViewCell.swift */; };
+		3B2CF83E22F9F02700BA91BE /* AddMemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CF83D22F9F02700BA91BE /* AddMemberTableViewCell.swift */; };
+		3B2CF84022F9F08600BA91BE /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CF83F22F9F08600BA91BE /* UIStoryboard+Extension.swift */; };
+		3BE6EFB022FBF9D7007C46BF /* UIPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6EFAF22FBF9D7007C46BF /* UIPresentable.swift */; };
+		3BE6EFB222FBF9EE007C46BF /* AlertUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6EFB122FBF9EE007C46BF /* AlertUsable.swift */; };
 		4F78A0911C1DE46E62B1F0B3 /* Pods_strolling_of_time_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FBBCCB776F93D8AA17BCD1 /* Pods_strolling_of_time_iosTests.framework */; };
 		6B1814D022D5F74600F97504 /* PatternTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1814CF22D5F74600F97504 /* PatternTimer.swift */; };
 		6B1814D222D5F85000F97504 /* EstimatedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1814D122D5F85000F97504 /* EstimatedTime.swift */; };
@@ -54,6 +60,12 @@
 		3B2CF83122F9E18500BA91BE /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		3B2CF83322F9E19200BA91BE /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		3B2CF83622F9E1CE00BA91BE /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		3B2CF83822F9EFEC00BA91BE /* AddMemeberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemeberViewController.swift; sourceTree = "<group>"; };
+		3B2CF83B22F9F01B00BA91BE /* AddMemberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B2CF83D22F9F02700BA91BE /* AddMemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberTableViewCell.swift; sourceTree = "<group>"; };
+		3B2CF83F22F9F08600BA91BE /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		3BE6EFAF22FBF9D7007C46BF /* UIPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPresentable.swift; sourceTree = "<group>"; };
+		3BE6EFB122FBF9EE007C46BF /* AlertUsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUsable.swift; sourceTree = "<group>"; };
 		46447C83366A28136E3E89C8 /* Pods-strolling-of-time-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosUITests/Pods-strolling-of-time-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B1814CF22D5F74600F97504 /* PatternTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternTimer.swift; sourceTree = "<group>"; };
 		6B1814D122D5F85000F97504 /* EstimatedTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatedTime.swift; sourceTree = "<group>"; };
@@ -116,6 +128,7 @@
 				3B2CF82D22F9DF3500BA91BE /* UIView+Extension.swift */,
 				3B2CF83122F9E18500BA91BE /* UICollectionView+Extension.swift */,
 				3B2CF83322F9E19200BA91BE /* UITableView+Extension.swift */,
+				3B2CF83F22F9F08600BA91BE /* UIStoryboard+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -124,8 +137,20 @@
 			isa = PBXGroup;
 			children = (
 				3B2CF83622F9E1CE00BA91BE /* NibLoadable.swift */,
+				3BE6EFAF22FBF9D7007C46BF /* UIPresentable.swift */,
+				3BE6EFB122FBF9EE007C46BF /* AlertUsable.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		3B2CF83A22F9EFF700BA91BE /* AddMember */ = {
+			isa = PBXGroup;
+			children = (
+				3B2CF83822F9EFEC00BA91BE /* AddMemeberViewController.swift */,
+				3B2CF83B22F9F01B00BA91BE /* AddMemberCollectionViewCell.swift */,
+				3B2CF83D22F9F02700BA91BE /* AddMemberTableViewCell.swift */,
+			);
+			path = AddMember;
 			sourceTree = "<group>";
 		};
 		5F2AD8A7BED8608A84F2F097 /* Frameworks */ = {
@@ -168,6 +193,7 @@
 		6B1814CD22D5F6F400F97504 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3B2CF83A22F9EFF700BA91BE /* AddMember */,
 				6BD7AD9722D4A2FC00F82F9B /* ViewController.swift */,
 				3B2CF82822F9DDDE00BA91BE /* CreateGroupViewController.swift */,
 				3B2CF82F22F9E09F00BA91BE /* CreateGroupMemberCollectionViewCell.swift */,
@@ -479,6 +505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B2CF83422F9E19200BA91BE /* UITableView+Extension.swift in Sources */,
+				3BE6EFB022FBF9D7007C46BF /* UIPresentable.swift in Sources */,
 				6B1814D022D5F74600F97504 /* PatternTimer.swift in Sources */,
 				3B2CF82E22F9DF3500BA91BE /* UIView+Extension.swift in Sources */,
 				6B1814D222D5F85000F97504 /* EstimatedTime.swift in Sources */,
@@ -487,8 +514,13 @@
 				3B2CF83222F9E18500BA91BE /* UICollectionView+Extension.swift in Sources */,
 				6BD7AD9822D4A2FC00F82F9B /* ViewController.swift in Sources */,
 				3B2CF83722F9E1CE00BA91BE /* NibLoadable.swift in Sources */,
+				3B2CF83E22F9F02700BA91BE /* AddMemberTableViewCell.swift in Sources */,
 				6B1814D422D5F94300F97504 /* TimeUnit.swift in Sources */,
+				3B2CF83922F9EFEC00BA91BE /* AddMemeberViewController.swift in Sources */,
+				3BE6EFB222FBF9EE007C46BF /* AlertUsable.swift in Sources */,
+				3B2CF83C22F9F01B00BA91BE /* AddMemberCollectionViewCell.swift in Sources */,
 				6BD7AD9622D4A2FC00F82F9B /* AppDelegate.swift in Sources */,
+				3B2CF84022F9F08600BA91BE /* UIStoryboard+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

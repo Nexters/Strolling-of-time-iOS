@@ -40,7 +40,9 @@ extension CreateGroupViewController: UICollectionViewDelegate, UICollectionViewD
         if indexPath.row != sampleMember.count {
             print("select")
         } else {
-            print("to new view")
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let addMemeberViewController = mainStoryboard.viewController(AddMemeberViewController.self)
+            self.show(addMemeberViewController, sender: nil)
         }
     }
 }
