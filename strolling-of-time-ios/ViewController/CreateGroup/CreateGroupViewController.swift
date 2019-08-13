@@ -13,14 +13,26 @@ class CreateGroupViewController: UIViewController {
     @IBOutlet private weak var collectionView: UICollectionView?
     var sampleMember = ["sujin", "naljin"]
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        super.viewWillAppear(animated)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillDisappear(animated)
     }
     func setupCollectionView(){
         collectionView?.delegate = self
         collectionView?.dataSource = self
     }
+    @IBAction func dismiss(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 extension CreateGroupViewController: UICollectionViewDelegate, UICollectionViewDataSource {
