@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SnapKit
 
 class StretchyViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
@@ -41,7 +40,7 @@ class StretchyViewController: UIViewController {
     }
     func setUI() {
         let statusBar: CGFloat = isIphoneX() ? 44 : 20
-        imageIntervalheight.constant -= statusBar
+        imageIntervalheight.constant -= 0
         intervalHeight = height.constant
     }
 }
@@ -65,42 +64,11 @@ extension StretchyViewController: UIScrollViewDelegate {
 
 extension StretchyViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return 20
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = "Row: \(indexPath.row+1)"
         return cell
-    }
-}
-
-extension UIViewController {
-    func isIphoneX() -> Bool{
-        if UIDevice().userInterfaceIdiom == .phone {
-            switch UIScreen.main.nativeBounds.height {
-            case 1136:
-                print("IPHONE 5,5S,5C")
-                return false
-            case 1334:
-                print("IPHONE 6,7,8 IPHONE 6S,7S,8S ")
-                return false
-            case 1920, 2208:
-                print("IPHONE 6PLUS, 6SPLUS, 7PLUS, 8PLUS")
-                return false
-            case 2436:
-                print("IPHONE X, IPHONE XS")
-                return true
-            case 2688:
-                print("IPHONE XS_MAX")
-                return true
-            case 1792:
-                print("IPHONE XR")
-                return true
-            default:
-                print("UNDETERMINED")
-                return false
-            }
-        }
-        return false
     }
 }
