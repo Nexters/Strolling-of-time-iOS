@@ -1254,10 +1254,10 @@
             </objects>
             <point key="canvasLocation" x="1212" y="905"/>
         </scene>
-        <!--View Controller-->
+        <!--Stop Watch View Controller-->
         <scene sceneID="Q7E-Lb-enI">
             <objects>
-                <viewController id="fmG-y1-ShF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StopWatchViewController" id="fmG-y1-ShF" customClass="StopWatchViewController" customModule="strolling_of_time_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="05N-2m-dqz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1272,14 +1272,14 @@
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="20"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHV-kh-izW">
-                                        <rect key="frame" x="59" y="90" width="68" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHV-kh-izW">
+                                        <rect key="frame" x="-19" y="90" width="217" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="20"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6l-Rt-VUy">
-                                        <rect key="frame" x="80" y="44" width="19" height="24"/>
+                                        <rect key="frame" x="24" y="44" width="75" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="20"/>
                                         <nil key="highlightedColor"/>
@@ -1308,15 +1308,23 @@
                                 <rect key="frame" x="164" y="446" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pause:" destination="fmG-y1-ShF" eventType="touchUpInside" id="REf-yq-FvQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zLW-RM-apK"/>
                     </view>
+                    <connections>
+                        <outlet property="pauseButton" destination="Xw4-Rn-vu6" id="dvB-8d-XN4"/>
+                        <outlet property="percentLabel" destination="y6l-Rt-VUy" id="FnA-x7-Eej"/>
+                        <outlet property="timeLabel" destination="BHV-kh-izW" id="4Dq-dt-Gm4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqM-DY-ohU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-295" y="2137"/>
+            <point key="canvasLocation" x="-295.19999999999999" y="2136.88155922039"/>
         </scene>
         <!--Stretchy View Controller-->
         <scene sceneID="Edf-L3-soG">
