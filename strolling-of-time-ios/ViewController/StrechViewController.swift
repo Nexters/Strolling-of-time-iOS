@@ -42,6 +42,11 @@ class StretchyViewController: UIViewController {
         let statusBar: CGFloat = isIphoneX() ? 44 : 20
         imageIntervalheight.constant -= 0
         intervalHeight = height.constant
+        
+    }
+    deinit {
+        //되기전에 돌아가고 있으면 마지막 통신
+        
     }
 }
 

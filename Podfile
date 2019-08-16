@@ -6,6 +6,7 @@ target 'strolling-of-time-ios' do
   use_frameworks!
 pod 'SwiftLint'
 pod 'SnapKit'
+pod 'CircleProgressView', '~> 1.0'
 
   # Pods for strolling-of-time-ios
 

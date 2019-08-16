@@ -1,20 +1,24 @@
 PODS:
+  - CircleProgressView (1.2.0)
   - SnapKit (5.0.0)
   - SwiftLint (0.33.1)
 
 DEPENDENCIES:
+  - CircleProgressView (~> 1.0)
   - SnapKit
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CircleProgressView
     - SnapKit
     - SwiftLint
 
 SPEC CHECKSUMS:
+  CircleProgressView: 6b5b091d59dc5e5d2fda84e637a40498cdc39937
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   SwiftLint: 9fc1143bbacec37f94994a7d0d2a85b2154b6294
 
-PODFILE CHECKSUM: 9f4aadf1a3ae152154a4a487e58fb32260055860
+PODFILE CHECKSUM: b265a38ede046a8f0d79300e120fbccf7d7bf12b
 
 COCOAPODS: 1.7.5
