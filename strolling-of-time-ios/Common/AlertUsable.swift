@@ -20,4 +20,13 @@ extension AlertUsable {
         alert.addAction(okAction)
         self.viewController.present(alert, animated: true)
     }
+    func failureAlert(type: NetworkError) {
+        switch type {
+        case .networkConnectFail:
+            self.simpleAlert(title: "오류", message: "네트워크 연결상태를 확인해주세요")
+        case .networkError(let msg):
+            self.simpleAlert(title: "오류", message: "잠시후 다시 시도해주세요")
+            print("error log is "+msg)
+        }
+    }
 }

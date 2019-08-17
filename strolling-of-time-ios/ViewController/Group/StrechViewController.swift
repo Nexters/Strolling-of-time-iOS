@@ -13,6 +13,8 @@ class StretchyViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var height: NSLayoutConstraint!
     @IBOutlet weak var imageIntervalheight: NSLayoutConstraint!
+    
+    @IBOutlet weak var tableHeaderView: UIView!
     var intervalHeight: CGFloat = 0
     var isNavigationbarShown = false
     override func viewWillAppear(_ animated: Bool) {
@@ -24,15 +26,28 @@ class StretchyViewController: UIViewController {
         setUI()
         setTableView()
         setScrollView()
+        
     }
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         super.viewWillDisappear(animated)
     }
+    override func viewDidLayoutSubviews() {
+        tableHeaderView.makeRoundedSelectedCorners(corners: [.topLeft, .topRight], radius: 15)
+    }
     func setTableView() {
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.bounces = false
+        registerCell()
+    }
+    func registerCell() {
+        let missionCellNibName = UINib(nibName: "MissionCell", bundle: nil)
+        tableView.register(missionCellNibName, forCellReuseIdentifier: MissionTableViewCell.nibId)
+        let noMissionCellNibName = UINib(nibName: "NoMissionCell", bundle: nil)
+        tableView.register(noMissionCellNibName, forCellReuseIdentifier: NoMissionTableViewCell.nibId)
+        let missionHeaderCellNibName = UINib(nibName: "MissionFooterCell", bundle: nil)
+        tableView.register(missionHeaderCellNibName, forCellReuseIdentifier: MissionFooterTableViewCell.nibId)
     }
     func setScrollView() {
         self.scrollView.bounces = false
@@ -40,9 +55,8 @@ class StretchyViewController: UIViewController {
     }
     func setUI() {
         let statusBar: CGFloat = isIphoneX() ? 44 : 20
-        imageIntervalheight.constant -= 0
+        imageIntervalheight.constant -= statusBar
         intervalHeight = height.constant
-        
     }
     deinit {
         //되기전에 돌아가고 있으면 마지막 통신
@@ -64,6 +78,7 @@ extension StretchyViewController: UIScrollViewDelegate {
             self.navigationController?.setNavigationBarHidden(true, animated: true)
             isNavigationbarShown = false
         }
+        self.navigationItem.title = "sujinnaljin"
     }
 }
 
@@ -72,8 +87,8 @@ extension StretchyViewController: UITableViewDelegate, UITableViewDataSource {
         return 20
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Row: \(indexPath.row+1)"
+        let cell = tableView.cell(for: MissionTableViewCell.self)
+        cell.backgroundColor = .white
         return cell
     }
 }

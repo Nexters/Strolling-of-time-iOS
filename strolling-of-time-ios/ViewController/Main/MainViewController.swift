@@ -10,67 +10,106 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    var sampleGroup = ["sujin", "naljin"]
+    var sampleGroups = ["sujin", "naljin", "sujin", "naljin", "sujin", "naljin"]
+    var sampleMissions = ["sujin", "naljin", "sujin", "naljin", "sujin", "naljin"]
+    
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var urgentMissionBackground: UIView!
+    @IBOutlet weak var urgentMissionTimeBackground: UIView!
+    @IBOutlet weak var urgentMissionTitleLabel: UILabel!
+    @IBOutlet weak var urgentMissionGroupLabel: UILabel!
+    @IBOutlet weak var urgentMissionTimeLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView?
-    @IBOutlet weak var pageControl: UIPageControl?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationbar()
-        setupCollectionView()
-        setupPageControl()
+        setCollectionView()
+        setTableView()
+        setUI()
+        let indexPath = IndexPath(row: 0, section: 0)
+        collectionView?.selectItem(at: indexPath, animated: true, scrollPosition: .bottom)
     }
-    
+    @IBAction func toUrgentMission(_ sender: Any) {
+    }
+    func setUI() {
+        profileImage.makeRounded(cornerRadius: 30)
+        urgentMissionTimeBackground.makeRounded(cornerRadius: 10)
+        urgentMissionTimeBackground.addShadow(offset: CGSize(width: 0, height: 4), color: .black, radius: 15, opacity: 0.1)
+    }
     func setupNavigationbar() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        //self.navigationController?.navigationBar.isTranslucent = true
-        //self.navigationController?.view.backgroundColor = .clear
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 58, height: 22))
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = UIImage(named: "cereal")!
+        self.navigationItem.titleView = imageView
     }
-    func setupCollectionView(){
+    func setCollectionView() {
         collectionView?.delegate = self
         collectionView?.dataSource = self
     }
-    func setupPageControl() {
-        let angle = CGFloat.pi/2
-        self.pageControl?.transform = CGAffineTransform(rotationAngle: angle)
-        pageControl?.currentPageIndicatorTintColor = .white
-        pageControl?.pageIndicatorTintColor = #colorLiteral(red: 0.8352941176, green: 0.8352941176, blue: 0.8352941176, alpha: 1)
-        pageControl?.numberOfPages = sampleGroup.count
-        pageControl?.currentPage = 0
+    func setTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        registerCell()
     }
-    
+    func registerCell() {
+        let missionCellNibName = UINib(nibName: "MissionCell", bundle: nil)
+        tableView.register(missionCellNibName, forCellReuseIdentifier: MissionTableViewCell.nibId)
+        let noMissionCellNibName = UINib(nibName: "NoMissionCell", bundle: nil)
+        tableView.register(noMissionCellNibName, forCellReuseIdentifier: NoMissionTableViewCell.nibId)
+        let missionHeaderCellNibName = UINib(nibName: "MissionHeaderCell", bundle: nil)
+        tableView.register(missionHeaderCellNibName, forCellReuseIdentifier: MissionHeaderTableViewCell.nibId)
+    }
     @IBAction func createGroup(_ sender: Any) {
-        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let createGroupNavi = mainStoryboard.instantiateViewController(withIdentifier: "createGroupNavi")
-        self.present(createGroupNavi, animated: true)
+//        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let createGroupNavi = mainStoryboard.instantiateViewController(withIdentifier: "createGroupNavi")
+//        self.present(createGroupNavi, animated: true)
     }
 }
 
 extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return sampleGroup.count
+        return sampleGroups.count+1
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.cell(type: MainCollectionViewCell.self, for: indexPath)
+        if indexPath.row == 0 {
+           //전체 보여질 셀
+            let data = "전체"
+            cell.data = data
+            cell.configure(data: data)
+        } else {
+            cell.data = self.sampleGroups[indexPath.row-1]
+            cell.configure(data: self.sampleGroups[indexPath.row-1])
+        }
         return cell
     }
-}
-
-extension MainViewController: UICollectionViewDelegateFlowLayout {
-    //cell size
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.view.frame.width, height: self.view.frame.height-self.view.safeAreaInsets.top-self.view.safeAreaInsets.bottom)
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("filter")
     }
 }
 
-extension MainViewController {
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        guard let collectionView = self.collectionView else {
-            return
-        }
-        let visibleRect = CGRect(origin: collectionView.contentOffset, size: collectionView.bounds.size)
-        let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
-        let visibleIndexPath = collectionView.indexPathForItem(at: visiblePoint)
-        self.pageControl?.currentPage = visibleIndexPath?.row ?? 0
+extension MainViewController: UITableViewDataSource, UITableViewDelegate {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 43.5
+    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let cell = tableView.cell(for: MissionHeaderTableViewCell.self)
+        cell.groupTitleLabel.text = "sujinnaljin"
+        return cell
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return sampleMissions.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.cell(for: MissionTableViewCell.self)
+        return cell
     }
 }

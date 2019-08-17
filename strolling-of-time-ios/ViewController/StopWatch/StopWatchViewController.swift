@@ -8,6 +8,7 @@
 
 import UIKit
 import CircleProgressView
+import SnapKit
 
 class StopWatchViewController: UIViewController {
 
@@ -16,33 +17,19 @@ class StopWatchViewController: UIViewController {
     @IBOutlet private weak var pauseButton: UIButton!
     @IBOutlet private weak var percentLabel: UILabel!
     @IBOutlet private weak var timeLabel: UILabel!
-    @IBOutlet private weak var stopwatchBackView: UIView!
+    @IBOutlet private weak var stopwatchCircleImage: UIImageView!
     @IBOutlet weak var progressView: CircleProgressView!
-    
+   
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setTimerUI()
-    }
-    override func viewWillLayoutSubviews() {
-        setUI()
-        let colorTop = getCGColor(red: 255, green: 99, blue: 104)
-        let colorBottom = getCGColor(red: 255, green: 112, blue: 166)
-        setGradientBackground(stopwatchBackView, colorTop: colorTop, colorBottom: colorBottom)
+        self.view.backgroundColor = #colorLiteral(red: 1, green: 0.4039215686, blue: 0.4823529412, alpha: 1)
+        progressView.trackFillColor = .white
     }
     
-    func getCGColor(red: CGFloat, green: CGFloat, blue: CGFloat) -> CGColor {
-        return UIColor(red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: 1.0).cgColor
-    }
-    func setGradientBackground(_ view: UIView, colorTop: CGColor, colorBottom: CGColor) {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [colorTop, colorBottom]
-        gradientLayer.locations = [0.0, 1.0]
-        gradientLayer.frame = self.view.bounds
-        view.layer.insertSublayer(gradientLayer, at:0)
-    }
     func setUI() {
-        self.stopwatchBackView.makeRounded()
+        //self.stopwatchBackView.makeRounded()
     }
     func setTimerUI() {
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] (timer) in
@@ -73,6 +60,10 @@ class StopWatchViewController: UIViewController {
     }
     @IBAction func pause(_ sender: Any) {
         bb()
+    }
+    
+    @IBAction func toNext(_ sender: Any) {
+        print("toNext")
     }
     func bb() {
         if isRunning {

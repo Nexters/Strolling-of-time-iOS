@@ -7,6 +7,8 @@ target 'strolling-of-time-ios' do
 pod 'SwiftLint'
 pod 'SnapKit'
 pod 'CircleProgressView', '~> 1.0'
+pod 'Moya'
+pod 'SwiftyJSON'
 
   # Pods for strolling-of-time-ios
 
