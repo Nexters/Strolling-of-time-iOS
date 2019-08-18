@@ -30,6 +30,9 @@
 		3B1FD50323081D89007C915C /* NoMissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FD50223081D89007C915C /* NoMissionTableViewCell.swift */; };
 		3B1FD50723083B84007C915C /* MissionFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1FD50623083B84007C915C /* MissionFooterCell.xib */; };
 		3B1FD50923083B9C007C915C /* MissionFooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FD50823083B9C007C915C /* MissionFooterTableViewCell.swift */; };
+		3B1FD52F2309963B007C915C /* GroupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FD52E2309963B007C915C /* GroupCollectionViewCell.swift */; };
+		3B1FD5322309BA3D007C915C /* PastMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FD5312309BA3D007C915C /* PastMissionViewController.swift */; };
+		3B1FD5352309C2FB007C915C /* CreateMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FD5342309C2FB007C915C /* CreateMissionViewController.swift */; };
 		3B2CF82922F9DDDE00BA91BE /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CF82822F9DDDE00BA91BE /* CreateGroupViewController.swift */; };
 		3B2CF82E22F9DF3500BA91BE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CF82D22F9DF3500BA91BE /* UIView+Extension.swift */; };
 		3B2CF83022F9E09F00BA91BE /* CreateGroupMemberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CF82F22F9E09F00BA91BE /* CreateGroupMemberCollectionViewCell.swift */; };
@@ -40,7 +43,8 @@
 		3B2CF83C22F9F01B00BA91BE /* AddMemberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CF83B22F9F01B00BA91BE /* AddMemberCollectionViewCell.swift */; };
 		3B2CF83E22F9F02700BA91BE /* AddMemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CF83D22F9F02700BA91BE /* AddMemberTableViewCell.swift */; };
 		3B2CF84022F9F08600BA91BE /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CF83F22F9F08600BA91BE /* UIStoryboard+Extension.swift */; };
-		3B6CBA8923054185004D7949 /* StrechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CBA8823054185004D7949 /* StrechViewController.swift */; };
+		3B41BAAF2309F2F2006E12C3 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B41BAAE2309F2F2006E12C3 /* Date+Extension.swift */; };
+		3B6CBA8923054185004D7949 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CBA8823054185004D7949 /* GroupViewController.swift */; };
 		3B6CBA9A230575B4004D7949 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CBA99230575B4004D7949 /* UIViewController+Extension.swift */; };
 		3B6CBA9F230597D4004D7949 /* StopWatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CBA9E230597D4004D7949 /* StopWatchModel.swift */; };
 		3B6CBAA223059907004D7949 /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CBAA123059907004D7949 /* StopWatchViewController.swift */; };
@@ -104,6 +108,9 @@
 		3B1FD50223081D89007C915C /* NoMissionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoMissionTableViewCell.swift; sourceTree = "<group>"; };
 		3B1FD50623083B84007C915C /* MissionFooterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionFooterCell.xib; sourceTree = "<group>"; };
 		3B1FD50823083B9C007C915C /* MissionFooterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionFooterTableViewCell.swift; sourceTree = "<group>"; };
+		3B1FD52E2309963B007C915C /* GroupCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B1FD5312309BA3D007C915C /* PastMissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastMissionViewController.swift; sourceTree = "<group>"; };
+		3B1FD5342309C2FB007C915C /* CreateMissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMissionViewController.swift; sourceTree = "<group>"; };
 		3B2CF82822F9DDDE00BA91BE /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
 		3B2CF82D22F9DF3500BA91BE /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		3B2CF82F22F9E09F00BA91BE /* CreateGroupMemberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupMemberCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -114,7 +121,8 @@
 		3B2CF83B22F9F01B00BA91BE /* AddMemberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B2CF83D22F9F02700BA91BE /* AddMemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberTableViewCell.swift; sourceTree = "<group>"; };
 		3B2CF83F22F9F08600BA91BE /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
-		3B6CBA8823054185004D7949 /* StrechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrechViewController.swift; sourceTree = "<group>"; };
+		3B41BAAE2309F2F2006E12C3 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		3B6CBA8823054185004D7949 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		3B6CBA99230575B4004D7949 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		3B6CBA9E230597D4004D7949 /* StopWatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchModel.swift; sourceTree = "<group>"; };
 		3B6CBAA123059907004D7949 /* StopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
@@ -240,7 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				3B1FD50523083B6D007C915C /* Cell */,
-				3B6CBA8823054185004D7949 /* StrechViewController.swift */,
+				3B6CBA8823054185004D7949 /* GroupViewController.swift */,
+				3B1FD52E2309963B007C915C /* GroupCollectionViewCell.swift */,
 			);
 			path = Group;
 			sourceTree = "<group>";
@@ -254,6 +263,22 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		3B1FD5302309BA21007C915C /* PastMission */ = {
+			isa = PBXGroup;
+			children = (
+				3B1FD5312309BA3D007C915C /* PastMissionViewController.swift */,
+			);
+			path = PastMission;
+			sourceTree = "<group>";
+		};
+		3B1FD5332309C2EA007C915C /* CreateMission */ = {
+			isa = PBXGroup;
+			children = (
+				3B1FD5342309C2FB007C915C /* CreateMissionViewController.swift */,
+			);
+			path = CreateMission;
+			sourceTree = "<group>";
+		};
 		3B2CF82A22F9DE4200BA91BE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +288,7 @@
 				3B2CF83F22F9F08600BA91BE /* UIStoryboard+Extension.swift */,
 				3B6CBA99230575B4004D7949 /* UIViewController+Extension.swift */,
 				3B1FD4F323080F43007C915C /* UICollectionViewCell+Extension.swift */,
+				3B41BAAE2309F2F2006E12C3 /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -358,12 +384,14 @@
 			isa = PBXGroup;
 			children = (
 				6BD7AD9722D4A2FC00F82F9B /* ViewController.swift */,
-				3B1FD50423083B64007C915C /* Group */,
 				3B1FD4D52307CED6007C915C /* Initial */,
 				3B1FD4D82307CEE6007C915C /* Login */,
 				3B1FD4D92307CEED007C915C /* Join */,
 				3B6CBAA0230598EF004D7949 /* StopWatch */,
 				3BE6EFB422FC044A007C46BF /* Main */,
+				3B1FD50423083B64007C915C /* Group */,
+				3B1FD5302309BA21007C915C /* PastMission */,
+				3B1FD5332309C2EA007C915C /* CreateMission */,
 				3BE6EFB322FC02CC007C46BF /* CreateGroup */,
 				3B2CF83A22F9EFF700BA91BE /* AddMember */,
 			);
@@ -700,9 +728,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B1FD4EE2307DDC2007C915C /* DefaultVO.swift in Sources */,
+				3B41BAAF2309F2F2006E12C3 /* Date+Extension.swift in Sources */,
 				3B2CF83422F9E19200BA91BE /* UITableView+Extension.swift in Sources */,
 				3BE6EFB022FBF9D7007C46BF /* UIPresentable.swift in Sources */,
 				6B1814D022D5F74600F97504 /* PatternTimer.swift in Sources */,
+				3B1FD5352309C2FB007C915C /* CreateMissionViewController.swift in Sources */,
 				3B2CF82E22F9DF3500BA91BE /* UIView+Extension.swift in Sources */,
 				6B1814D222D5F85000F97504 /* EstimatedTime.swift in Sources */,
 				3B2CF83022F9E09F00BA91BE /* CreateGroupMemberCollectionViewCell.swift in Sources */,
@@ -715,6 +745,7 @@
 				3B6CBA9F230597D4004D7949 /* StopWatchModel.swift in Sources */,
 				3B2CF83E22F9F02700BA91BE /* AddMemberTableViewCell.swift in Sources */,
 				3B6CBA9A230575B4004D7949 /* UIViewController+Extension.swift in Sources */,
+				3B1FD52F2309963B007C915C /* GroupCollectionViewCell.swift in Sources */,
 				3B1FD4E12307D89D007C915C /* KeyboardObserving.swift in Sources */,
 				3B1FD50323081D89007C915C /* NoMissionTableViewCell.swift in Sources */,
 				3B1FD4DB2307CEF5007C915C /* JoinViewController.swift in Sources */,
@@ -724,11 +755,12 @@
 				3B1FD4E82307DC0E007C915C /* Networkable.swift in Sources */,
 				3B1FD4D72307CEE4007C915C /* InitialViewController.swift in Sources */,
 				3B1FD4EA2307DC14007C915C /* NetworkManager.swift in Sources */,
-				3B6CBA8923054185004D7949 /* StrechViewController.swift in Sources */,
+				3B6CBA8923054185004D7949 /* GroupViewController.swift in Sources */,
 				3B2CF83922F9EFEC00BA91BE /* AddMemeberViewController.swift in Sources */,
 				3B1FD4E42307DBE7007C915C /* NetworkResult.swift in Sources */,
 				3B1FD4F22307E811007C915C /* Auth.swift in Sources */,
 				3BE6EFB222FBF9EE007C46BF /* AlertUsable.swift in Sources */,
+				3B1FD5322309BA3D007C915C /* PastMissionViewController.swift in Sources */,
 				3B1FD50923083B9C007C915C /* MissionFooterTableViewCell.swift in Sources */,
 				3B6CBAA223059907004D7949 /* StopWatchViewController.swift in Sources */,
 				3B2CF83C22F9F01B00BA91BE /* AddMemberCollectionViewCell.swift in Sources */,

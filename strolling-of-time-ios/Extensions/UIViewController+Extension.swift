@@ -37,4 +37,15 @@ extension UIViewController {
         }
         return false
     }
+    func moveTo<T>(storyboard:Storyboard, viewController: T.Type, isPresentModally: Bool) where T: NibLoadable {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let targetController = mainStoryboard.viewController(T.self)
+        if let targetController = targetController as? UIViewController {
+            if isPresentModally {
+                self.present(targetController, animated: true)
+            } else {
+                self.navigationController?.pushViewController(targetController, animated: true)
+            }
+        }
+    }
 }

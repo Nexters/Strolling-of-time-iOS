@@ -46,6 +46,9 @@
                     <constraint firstAttribute="trailing" secondItem="wsl-x2-KNr" secondAttribute="trailing" constant="30" id="sX2-F8-oxU"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="pastMissionButton" destination="e3N-nb-3g2" id="FYw-Zw-uhg"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

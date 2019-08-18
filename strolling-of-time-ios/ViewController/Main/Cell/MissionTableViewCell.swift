@@ -15,7 +15,7 @@ class MissionTableViewCell: UITableViewCell, NibLoadable {
     @IBOutlet weak var missionTitleLabel: UILabel!
     @IBOutlet weak var leftTimeLabel: UILabel!
     @IBOutlet weak var goalTimeLabel: UILabel!
-    
+    @IBOutlet weak var percentageLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         setUI()

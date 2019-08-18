@@ -16,30 +16,61 @@ class MainViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var urgentMissionHeight: NSLayoutConstraint!
     @IBOutlet weak var urgentMissionBackground: UIView!
     @IBOutlet weak var urgentMissionTimeBackground: UIView!
     @IBOutlet weak var urgentMissionTitleLabel: UILabel!
     @IBOutlet weak var urgentMissionGroupLabel: UILabel!
     @IBOutlet weak var urgentMissionTimeLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView?
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNavigationbarClear()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationbar()
         setCollectionView()
         setTableView()
         setUI()
         let indexPath = IndexPath(row: 0, section: 0)
         collectionView?.selectItem(at: indexPath, animated: true, scrollPosition: .bottom)
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNavigationbarClear()
+    }
     @IBAction func toUrgentMission(_ sender: Any) {
+        stretchUrgentView(isHide: true)
+    }
+    func stretchUrgentView(isHide: Bool) {
+        urgentMissionHeight.constant = isHide ? 0 : 150
+        urgentMissionBackground.isHidden = isHide
+        urgentMissionBackground.isUserInteractionEnabled = !isHide
+        if let headerView = tableView.tableHeaderView {
+            let height = headerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
+            var headerFrame = headerView.frame
+            //Comparison necessary to avoid infinite loop
+            if height != headerFrame.size.height {
+                headerFrame.size.height = height
+                headerView.frame = headerFrame
+                tableView.tableHeaderView = headerView
+            }
+        }
     }
     func setUI() {
         profileImage.makeRounded(cornerRadius: 30)
         urgentMissionTimeBackground.makeRounded(cornerRadius: 10)
         urgentMissionTimeBackground.addShadow(offset: CGSize(width: 0, height: 4), color: .black, radius: 15, opacity: 0.1)
     }
-    func setupNavigationbar() {
+    func setNavigationbarClear() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 58, height: 22))
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = UIImage(named: "cereal")!
+        self.navigationItem.titleView = imageView
+    }
+    func setNavigationbarOrigin() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 58, height: 22))
@@ -65,6 +96,8 @@ class MainViewController: UIViewController {
         tableView.register(missionHeaderCellNibName, forCellReuseIdentifier: MissionHeaderTableViewCell.nibId)
     }
     @IBAction func createGroup(_ sender: Any) {
+        stretchUrgentView(isHide: false)
+
 //        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
 //        let createGroupNavi = mainStoryboard.instantiateViewController(withIdentifier: "createGroupNavi")
 //        self.present(createGroupNavi, animated: true)
@@ -102,6 +135,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = tableView.cell(for: MissionHeaderTableViewCell.self)
+        cell.sectionHeaderButton.addTarget(self, action: #selector(toGroup), for: .touchUpInside)
         cell.groupTitleLabel.text = "sujinnaljin"
         return cell
     }
@@ -111,5 +145,12 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.cell(for: MissionTableViewCell.self)
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tableView.deselectRow(at: indexPath, animated: false)
+        self.moveTo(storyboard: .main, viewController: StopWatchViewController.self, isPresentModally: false)
+    }
+    @objc func toGroup() {
+        self.moveTo(storyboard: .main, viewController: GroupViewController.self, isPresentModally: false)
     }
 }

@@ -23,14 +23,10 @@ class InitialViewController: UIViewController {
     }
     // MARK: - Action
     @IBAction private func login(_ sender: Any) {
-        let mainStoryboard = UIStoryboard(name: Storyboard.main.rawValue, bundle: nil)
-        let loginViewController = mainStoryboard.viewController(LoginViewController.self)
-        self.show(loginViewController, sender: nil)
+        self.moveTo(storyboard: .main, viewController: LoginViewController.self, isPresentModally: false)
     }
     @IBAction private func join(_ sender: Any) {
-        let mainStoryboard = UIStoryboard(name: Storyboard.main.rawValue, bundle: nil)
-        let joinViewController = mainStoryboard.viewController(JoinViewController.self)
-        self.present(joinViewController, animated: true)
+        self.moveTo(storyboard: .main, viewController: JoinViewController.self, isPresentModally: true)
     }
     // MARK: - Lifecycle
     override func viewDidLoad() {

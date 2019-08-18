@@ -10,7 +10,7 @@ import UIKit
 import CircleProgressView
 import SnapKit
 
-class StopWatchViewController: UIViewController {
+class StopWatchViewController: UIViewController, NibLoadable {
 
     var model = StopWatch()
     private var isRunning: Bool = false

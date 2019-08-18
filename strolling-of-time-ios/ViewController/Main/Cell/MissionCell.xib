@@ -13,7 +13,7 @@
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MissionTableViewCell" rowHeight="88" id="6AD-q1-aCt" customClass="MissionTableViewCell" customModule="strolling_of_time_ios" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6AD-q1-aCt" id="wwJ-1e-LmP">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6AD-q1-aCt" id="wwJ-1e-LmP">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="87.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -47,7 +47,7 @@
                                     <constraint firstAttribute="width" constant="5" id="ogb-kY-trA"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DNC-PJ-rMp">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icRightAroowM" translatesAutoresizingMaskIntoConstraints="NO" id="DNC-PJ-rMp">
                                 <rect key="frame" x="284" y="30.5" width="6" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="6" id="7dw-VV-8VD"/>
@@ -60,10 +60,19 @@
                                 <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9h-E6-Rxo">
+                                <rect key="frame" x="230" y="25.5" width="44" height="22"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ETv-lA-6pO" secondAttribute="bottom" constant="15" id="06l-Zu-gtD"/>
+                            <constraint firstItem="d9h-E6-Rxo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dYI-2w-OYf" secondAttribute="trailing" constant="8" id="9FR-c4-6QX"/>
+                            <constraint firstItem="DNC-PJ-rMp" firstAttribute="leading" secondItem="d9h-E6-Rxo" secondAttribute="trailing" constant="10" id="C4f-rG-b44"/>
                             <constraint firstItem="4iy-Wi-uO4" firstAttribute="top" secondItem="qm6-nd-VO5" secondAttribute="top" id="LGW-sI-Ws2"/>
                             <constraint firstAttribute="bottom" secondItem="4iy-Wi-uO4" secondAttribute="bottom" id="LnF-bl-OPu"/>
                             <constraint firstAttribute="height" constant="73" id="QDC-fN-ZqN"/>
@@ -71,6 +80,7 @@
                             <constraint firstItem="ArV-v5-9bZ" firstAttribute="top" secondItem="qm6-nd-VO5" secondAttribute="top" constant="15" id="V02-7g-ABG"/>
                             <constraint firstItem="cUS-jb-LmL" firstAttribute="leading" secondItem="ETv-lA-6pO" secondAttribute="trailing" constant="10" id="YU0-AK-r7d"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dYI-2w-OYf" secondAttribute="trailing" constant="10" id="YUT-7q-uED"/>
+                            <constraint firstItem="d9h-E6-Rxo" firstAttribute="centerY" secondItem="DNC-PJ-rMp" secondAttribute="centerY" id="aYY-0y-XPc"/>
                             <constraint firstItem="ETv-lA-6pO" firstAttribute="centerY" secondItem="cUS-jb-LmL" secondAttribute="centerY" id="dG6-lB-2Ti"/>
                             <constraint firstItem="DNC-PJ-rMp" firstAttribute="centerY" secondItem="qm6-nd-VO5" secondAttribute="centerY" id="gdl-h1-gPV"/>
                             <constraint firstItem="dYI-2w-OYf" firstAttribute="centerY" secondItem="cUS-jb-LmL" secondAttribute="centerY" id="iFz-7J-wOg"/>
@@ -81,21 +91,27 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="0.0050000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="qm6-nd-VO5" firstAttribute="leading" secondItem="wwJ-1e-LmP" secondAttribute="leading" constant="30" id="A49-cL-kNB"/>
                     <constraint firstAttribute="trailing" secondItem="qm6-nd-VO5" secondAttribute="trailing" constant="30" id="HU5-FS-0XI"/>
                     <constraint firstItem="qm6-nd-VO5" firstAttribute="top" secondItem="wwJ-1e-LmP" secondAttribute="top" constant="7" id="UeA-KE-lya"/>
-                    <constraint firstAttribute="bottom" secondItem="qm6-nd-VO5" secondAttribute="bottom" constant="7.5" id="iCo-Uk-rFP"/>
+                    <constraint firstAttribute="bottom" secondItem="qm6-nd-VO5" secondAttribute="bottom" constant="7" id="iCo-Uk-rFP"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
             <connections>
-                <outlet property="goalTimeLabel" destination="dYI-2w-OYf" id="EVN-W4-Pcq"/>
+                <outlet property="goalTimeLabel" destination="dYI-2w-OYf" id="19Y-Rx-1h1"/>
                 <outlet property="groupColorView" destination="4iy-Wi-uO4" id="fo6-s7-TgG"/>
                 <outlet property="leftTimeLabel" destination="ETv-lA-6pO" id="O8a-fS-zqd"/>
                 <outlet property="missionBackground" destination="qm6-nd-VO5" id="WiC-wI-wfp"/>
                 <outlet property="missionTitleLabel" destination="ArV-v5-9bZ" id="edR-Bw-9KN"/>
+                <outlet property="percentageLabel" destination="d9h-E6-Rxo" id="yVV-CA-aeL"/>
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="icRightAroowM" width="8" height="14"/>
+    </resources>
 </document>

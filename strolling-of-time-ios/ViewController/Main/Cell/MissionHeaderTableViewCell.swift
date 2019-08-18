@@ -11,6 +11,7 @@ import UIKit
 class MissionHeaderTableViewCell: UITableViewCell, NibLoadable {
 
     @IBOutlet weak var groupTitleLabel: UILabel!
+    @IBOutlet weak var sectionHeaderButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
