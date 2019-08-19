@@ -63,7 +63,7 @@
 		6BD7ADA022D4A2FE00F82F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD7AD9E22D4A2FE00F82F9B /* LaunchScreen.storyboard */; };
 		6BD7ADAB22D4A2FE00F82F9B /* strolling_of_time_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7ADAA22D4A2FE00F82F9B /* strolling_of_time_iosTests.swift */; };
 		6BD7ADB622D4A2FE00F82F9B /* strolling_of_time_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7ADB522D4A2FE00F82F9B /* strolling_of_time_iosUITests.swift */; };
-		9E9EC8D889FDBF274E6BD52A /* Pods_strolling_of_time_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A69224D87104B37F290F2C /* Pods_strolling_of_time_iosUITests.framework */; };
+		D7A224FDF03C767E443EC22C /* libPods-strolling-of-time-iosUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E4F609EAA0C9A9F94CBF07 /* libPods-strolling-of-time-iosUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,12 +150,12 @@
 		6BD7ADB122D4A2FE00F82F9B /* strolling-of-time-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "strolling-of-time-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD7ADB522D4A2FE00F82F9B /* strolling_of_time_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strolling_of_time_iosUITests.swift; sourceTree = "<group>"; };
 		6BD7ADB722D4A2FE00F82F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81A69224D87104B37F290F2C /* Pods_strolling_of_time_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B29A72297AFFA8318532A32 /* Pods_strolling_of_time_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7C168094409F84CC85A8FC /* Pods-strolling-of-time-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosUITests/Pods-strolling-of-time-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D2FBBCCB776F93D8AA17BCD1 /* Pods_strolling_of_time_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strolling_of_time_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3893B25B05D00F62F74C209 /* Pods-strolling-of-time-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-ios.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-ios/Pods-strolling-of-time-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		DEA02168818E57DF3B6A68E3 /* Pods-strolling-of-time-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosTests.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosTests/Pods-strolling-of-time-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		F0E4F609EAA0C9A9F94CBF07 /* libPods-strolling-of-time-iosUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-strolling-of-time-iosUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E9EC8D889FDBF274E6BD52A /* Pods_strolling_of_time_iosUITests.framework in Frameworks */,
+				D7A224FDF03C767E443EC22C /* libPods-strolling-of-time-iosUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +348,7 @@
 			children = (
 				9B29A72297AFFA8318532A32 /* Pods_strolling_of_time_ios.framework */,
 				D2FBBCCB776F93D8AA17BCD1 /* Pods_strolling_of_time_iosTests.framework */,
-				81A69224D87104B37F290F2C /* Pods_strolling_of_time_iosUITests.framework */,
+				F0E4F609EAA0C9A9F94CBF07 /* libPods-strolling-of-time-iosUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

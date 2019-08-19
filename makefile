@@ -16,7 +16,7 @@ endif
 ifndef XCPRETTY
 	$(error xcpretty를 설치하세요)
 endif
-	xcodebuild \
+	set -o pipefail && xcodebuild \
 	-workspace strolling-of-time-ios.xcworkspace \
 	-configuration Debug \
 	-scheme strolling-of-time-ios \
@@ -25,14 +25,6 @@ endif
 	build test \
 	CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=YES | xcpretty
 .PHONY: build
-if [[ "$TRAVIS_BRANCH" == "master" ]]; then \
-xcodebuild test 
--workspace OptimizelySwiftSDK.xcworkspace \
--scheme $SCHEME \
--configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO \
--sdk $TEST_SDK \
--destination "platform=$PLATFORM,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES > buildoutput; cat buildoutput | xcpretty; \
-fi
 
 test:
 ifndef OS_VERSION
