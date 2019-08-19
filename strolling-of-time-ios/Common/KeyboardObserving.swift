@@ -67,7 +67,7 @@ extension KeyboardObserving where Self: UIViewController {
     func keyboardDidChangeFrame(_ notification: Notification) {}
     /// Register for UIKeyboard notifications.
     func registerForKeyboardEvents() {
-        _ = self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view,
+        _ = self.view.addGestureRecognizer(UITapGestureRecognizer(target: self,
                                                                   action: #selector(self.view.endEditing(_:))))
         _ = NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: nil) { notification in
             self.keyboardWillShow(notification)

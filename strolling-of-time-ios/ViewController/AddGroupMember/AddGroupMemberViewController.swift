@@ -1,58 +1,74 @@
 //
-//  AddMemeberViewController.swift
+//  AddGroupMemberViewController.swift
 //  strolling-of-time-ios
 //
-//  Created by 강수진 on 2019/08/07.
+//  Created by 강수진 on 2019/08/20.
 //  Copyright © 2019 wiw. All rights reserved.
 //
 
 import UIKit
 
-class AddMemeberViewController: UIViewController, NibLoadable {
+class AddGroupMemberViewController: UIViewController, NibLoadable {
     
-    typealias SelectedMember = (member: String, index: Int)
+    typealias SelectedMember = (member: String, image: String, index: Int)
     @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
-    @IBOutlet private weak var collectionView: UICollectionView?
-    @IBOutlet private weak var tableView: UITableView?
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var invitationButton: UIButton!
-    private var keyboardDismissGesture: UITapGestureRecognizer?
+    var delegate: SendDataDelegate?
     private var searchTxtField: UITextField = {
         let txtField = UITextField()
         txtField.placeholder = "닉네임 또는 메일로 검색해보세요"
-        txtField.font = UIFont.systemFont(ofSize: 14.0)
+        txtField.font = UIFont.systemFont(ofSize: 18.0)
         return txtField
     }()
-    private var tableViewSampleMember: [SelectedMember] = [] {
+    var tableViewSampleMember: [SelectedMember] = [] {
         didSet {
-            self.tableView?.reloadData()
+            self.tableView.reloadData()
         }
     }
-    private var collectionViewSampleMember: [SelectedMember] = [] {
-        didSet {
-            collectionViewHeight.constant = collectionViewSampleMember.isEmpty ? 0 : 150
-            self.invitationButton.backgroundColor = collectionViewSampleMember.isEmpty ? .gray : .green
-            self.invitationButton.setTitle("\(collectionViewSampleMember.count)명에게 초대장 보내기", for: .normal)
-            self.collectionView?.reloadData()
+    var collectionViewSampleMember: [SelectedMember] = []
+    var sampleMember :[SelectedMember] = [("1", "background", 1), ("2", "background", 2), ("11", "background", 3), ("22", "background", 4), ("111", "background", 5), ("222", "background", 6)]
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if isMovingFromParent {
+            delegate?.sendData(data: self.collectionViewSampleMember)
         }
     }
-    var sampleMember :[SelectedMember] = [("111", 53), ("222", 12)]
+    func collectionViewDataDidChanged() {
+        collectionViewHeight.constant = collectionViewSampleMember.isEmpty ? 0 : 150
+        self.invitationButton.setValidButton(isActive: !collectionViewSampleMember.isEmpty)
+        let buttonTitle = collectionViewSampleMember.isEmpty ? "멤버를 초대해주세요" : "\(collectionViewSampleMember.count)명에게 초대장 보내기"
+        self.invitationButton.setTitle(buttonTitle, for: .normal)
+        self.collectionView?.reloadData()
+    }
+    override func viewDidLayoutSubviews() {
+       collectionViewDataDidChanged()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationbar()
         setupCollectionView()
         setupTableView()
         setupTextfield()
-        setKeyboardSetting()
         setupInvitationButton()
+        hideKeyboarOnTap_()
+    }
+    func setNavigationbar() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         navigationItem.titleView = searchTxtField
     }
     func setupCollectionView() {
-        collectionView?.dataSource = self
-        collectionView?.delegate = self
+        collectionView.dataSource = self
+        collectionView.delegate = self
         collectionViewHeight.constant = 0
     }
     func setupTableView() {
-        tableView?.delegate = self
-        tableView?.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
+        self.tableView.isUserInteractionEnabled = true
+        self.tableView.allowsSelection = true
     }
     func setupTextfield() {
         searchTxtField.delegate = self
@@ -64,17 +80,17 @@ class AddMemeberViewController: UIViewController, NibLoadable {
         self.invitationButton.setTitle("0명에게 초대장 보내기", for: .normal)
     }
     @objc func inviteMember() {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
 }
 
 //TableView
-extension AddMemeberViewController: UITableViewDelegate, UITableViewDataSource {
+extension AddGroupMemberViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableViewSampleMember.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.cell(for: AddMemberTableViewCell.self)
+        let cell = tableView.cell(for: AddGroupMemberTableViewCell.self)
         cell.configure(data: tableViewSampleMember[indexPath.row])
         return cell
     }
@@ -84,31 +100,36 @@ extension AddMemeberViewController: UITableViewDelegate, UITableViewDataSource {
             return
         }
         let selectedMemeber = tableViewSampleMember[indexPath.row]
-        if !collectionViewSampleMember.map({(_, idx) -> Int in
+        if !collectionViewSampleMember.map({(_, _, idx) -> Int in
             return idx
         }).contains(selectedMemeber.index) {
             self.collectionViewSampleMember.append(selectedMemeber)
+            self.collectionViewDataDidChanged()
         }
     }
 }
 
 //CollectionView
-extension AddMemeberViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension AddGroupMemberViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return collectionViewSampleMember.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.cell(type: AddMemberCollectionViewCell.self, for: indexPath)
-        cell.configure(data: collectionViewSampleMember[indexPath.row])
+        let cell = collectionView.cell(type: AddGroupMemberCollectionViewCell.self, for: indexPath)
+        cell.configure(row: indexPath.row, data: collectionViewSampleMember[indexPath.row])
+        cell.setCallback {[weak self] (row: Int) in
+            guard let `self` = self else {
+                return
+            }
+            self.collectionViewSampleMember.remove(at: indexPath.row)
+            self.collectionViewDataDidChanged()
+        }
         return cell
-    }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.collectionViewSampleMember.remove(at: indexPath.row)
     }
 }
 
 //textField
-extension AddMemeberViewController: UITextFieldDelegate, AlertUsable {
+extension AddGroupMemberViewController: UITextFieldDelegate, AlertUsable {
     @objc func searchBarEditingChanged(_ searchBar: UISearchBar) {
         NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(self.searchMember(_:)), object: searchBar)
         perform(#selector(self.searchMember(_:)), with: searchBar, afterDelay: 0.5)
@@ -119,9 +140,9 @@ extension AddMemeberViewController: UITextFieldDelegate, AlertUsable {
             return
         }
         self.tableViewSampleMember = self.sampleMember.filter { (arg) -> Bool in
-                                                                let (member, _) = arg
-                                                                return member.contains(searchText)
-                                                                }
+            let (member, _, _) = arg
+            return member.contains(searchText)
+        }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -137,45 +158,21 @@ extension AddMemeberViewController: UITextFieldDelegate, AlertUsable {
             }
         }
         if let searchString = textField.text {
-            print("enter 누름")
+            print("enter")
         }
         return true
     }
 }
 
-//키보드 대응
-extension AddMemeberViewController{
-    func setKeyboardSetting() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+//키보드
+extension AddGroupMemberViewController {
+    private func hideKeyboarOnTap_() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboardAction))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
     }
     
-    @objc func keyboardWillShow(_ notification: Notification) {
-        adjustKeyboardDismissGesture(isKeyboardVisible: true)
-    }
-    
-    @objc func keyboardWillHide(_ notification: Notification) {
-        searchTxtField.text = ""
-        adjustKeyboardDismissGesture(isKeyboardVisible: false)
-    }
-    
-    //화면 바깥 터치했을때 키보드 없어지는 코드
-    func adjustKeyboardDismissGesture(isKeyboardVisible: Bool) {
-        if isKeyboardVisible {
-            if keyboardDismissGesture == nil {
-                keyboardDismissGesture = UITapGestureRecognizer(target: self, action: #selector(tapBackground))
-                view.addGestureRecognizer(keyboardDismissGesture!)
-            }
-        } else {
-            if keyboardDismissGesture != nil {
-                view.removeGestureRecognizer(keyboardDismissGesture!)
-                keyboardDismissGesture = nil
-            }
-        }
-    }
-    
-    @objc func tapBackground() {
+    @objc private func hideKeyboardAction(view: UIView) {
         self.searchTxtField.endEditing(true)
     }
-    
 }

@@ -4,7 +4,6 @@ platform :ios, (ENV['OS_VERSION'] || '12.0')
 def shared_pods
   pod 'SwiftLint'
   pod 'SnapKit'
-  pod 'CircleProgressView', '~> 1.0'
   pod 'Moya'
   pod 'SwiftyJSON'
 end

@@ -96,11 +96,7 @@ class MainViewController: UIViewController {
         tableView.register(missionHeaderCellNibName, forCellReuseIdentifier: MissionHeaderTableViewCell.nibId)
     }
     @IBAction func createGroup(_ sender: Any) {
-        stretchUrgentView(isHide: false)
-
-//        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        let createGroupNavi = mainStoryboard.instantiateViewController(withIdentifier: "createGroupNavi")
-//        self.present(createGroupNavi, animated: true)
+       
     }
 }
 

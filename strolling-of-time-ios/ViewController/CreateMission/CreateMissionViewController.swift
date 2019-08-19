@@ -66,15 +66,7 @@ class CreateMissionViewController: UIViewController, NibLoadable, KeyboardObserv
         return true
     }
     func setCreateMissionButton() {
-        if isCreateButtonValid() {
-            self.createMission.isUserInteractionEnabled = true
-            self.createMission.backgroundColor = #colorLiteral(red: 0.1490196078, green: 0.431372549, blue: 0.9098039216, alpha: 1)
-            self.createMission.setTitleColor(.white, for: .normal)
-        } else {
-            self.createMission.isUserInteractionEnabled = false
-            self.createMission.backgroundColor = #colorLiteral(red: 0.9333333333, green: 0.9333333333, blue: 0.9333333333, alpha: 1)
-            self.createMission.setTitleColor(#colorLiteral(red: 0.7411764706, green: 0.7411764706, blue: 0.7411764706, alpha: 1), for: .normal)
-        }
+        self.createMission.setValidButton(isActive: isCreateButtonValid())
     }
     @IBAction func createMission(_ sender: Any) {
         guard let startDate = self.startDate, let endDate = self.endDate, let missionTitle = self.titleTextField.text else {

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CircleProgressView
 import SnapKit
 
 class StopWatchViewController: UIViewController, NibLoadable {
