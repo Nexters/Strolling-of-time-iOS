@@ -17,6 +17,7 @@ install:
   - gem install coveralls
   - pod repo update
 script:
+  - pod install
   - make build
 after_success:
   - slather coverage --coveralls
