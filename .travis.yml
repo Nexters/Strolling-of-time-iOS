@@ -15,9 +15,14 @@ install:
   - gem install slather --no-document --quiet
   - gem install cocoapods -v '1.6.1'
   - gem install coveralls
+  - gem install cocoapods-clean
   - pod repo update
-script:
+before_script:
+  - pod deintegrate
+  - pod clean
+  - pod setup
   - pod install
+script:
   - make build
 after_success:
   - slather coverage --coveralls
