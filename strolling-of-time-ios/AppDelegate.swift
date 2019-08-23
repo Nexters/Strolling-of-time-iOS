@@ -10,6 +10,7 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    //TODO: - 로그인 했었냐 아니냐에 따라서 첫 뷰 달라지게
 
     var window: UIWindow?
 
