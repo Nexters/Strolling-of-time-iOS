@@ -100,7 +100,7 @@ extension CreateGroupViewController: UICollectionViewDelegate, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.cell(type: CreateGroupCollectionViewCell.self, for: indexPath)
         if indexPath.row == sampleMembers.count {
-            cell.profileImage.image = UIImage(named: "oval")
+            cell.profileImage.image = UIImage(named: "ovalBlack")
         } else {
             cell.profileImage.image = UIImage(named: sampleMembers[indexPath.row].image)
         }

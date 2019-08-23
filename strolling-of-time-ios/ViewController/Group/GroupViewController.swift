@@ -47,7 +47,7 @@ class GroupViewController: UIViewController, NibLoadable {
         tableHeaderView.makeRoundedSelectedCorners(corners: [.topLeft, .topRight], radius: 15)
     }
     func setNavigationColor(isTransparent: Bool) {
-        self.navigationItem.title = isTransparent ? "" : "sujinnaljin"
+        self.navigationItem.title = isTransparent ? "" : groupNameLabel.text ?? ""
         self.navigationController?.navigationBar.isTranslucent = isTransparent ? true : false
         self.navigationController?.navigationBar.tintColor = isTransparent ? .white : .black
     }

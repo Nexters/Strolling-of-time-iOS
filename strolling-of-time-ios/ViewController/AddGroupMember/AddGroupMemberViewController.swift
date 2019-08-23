@@ -28,7 +28,7 @@ class AddGroupMemberViewController: UIViewController, NibLoadable {
         }
     }
     var collectionViewSampleMember: [SelectedMember] = []
-    var sampleMember :[SelectedMember] = [("1", "background", 1), ("2", "background", 2), ("11", "background", 3), ("22", "background", 4), ("111", "background", 5), ("222", "background", 6)]
+    var sampleMember :[SelectedMember] = [("최고운", "background", 1), ("김민철", "background", 2), ("진성곤", "background", 3), ("박다예", "background", 4), ("강수진", "background", 5), ("조우현", "background", 6)]
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         if isMovingFromParent {

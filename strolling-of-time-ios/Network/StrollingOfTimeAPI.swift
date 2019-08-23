@@ -16,7 +16,7 @@ enum StrollingOfTimeAPI {
 
 extension StrollingOfTimeAPI: TargetType {
     var baseURL: URL {
-        guard let url = URL(string: "http://13.125.105.66:3000") else {
+        guard let url = URL(string: "13.125.253.54/v2") else {
             fatalError("base url could not be configured")
         }
         return url

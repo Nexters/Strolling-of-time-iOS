@@ -12,7 +12,7 @@ extension UIButton {
     func setValidButton(isActive: Bool) {
         if isActive {
             self.isUserInteractionEnabled = true
-            self.backgroundColor = #colorLiteral(red: 0.1490196078, green: 0.431372549, blue: 0.9098039216, alpha: 1)
+            self.backgroundColor = #colorLiteral(red: 1, green: 0.3058823529, blue: 0.4705882353, alpha: 1)
             self.setTitleColor(.white, for: .normal)
         } else {
             self.isUserInteractionEnabled = false

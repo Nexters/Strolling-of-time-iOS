@@ -10,7 +10,7 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    var sampleGroups = ["sujin", "naljin", "sujin", "naljin", "sujin", "naljin"]
+    var sampleGroups = ["2020 경찰 공무원", "넥터 러닝 크루", "2020 경찰 공무원", "넥터 러닝 크루", "2020 경찰 공무원", "넥터 러닝 크루"]
     var sampleMissions = ["sujin", "naljin", "sujin", "naljin", "sujin", "naljin"]
     
     @IBOutlet weak var tableView: UITableView!
@@ -40,7 +40,7 @@ class MainViewController: UIViewController {
         setNavigationbarClear()
     }
     @IBAction func toUrgentMission(_ sender: Any) {
-        stretchUrgentView(isHide: true)
+        self.moveTo(storyboard: .main, viewController: StopWatchViewController.self, isPresentModally: false)
     }
     func stretchUrgentView(isHide: Bool) {
         urgentMissionHeight.constant = isHide ? 0 : 150
@@ -95,9 +95,6 @@ class MainViewController: UIViewController {
         let missionHeaderCellNibName = UINib(nibName: "MissionHeaderCell", bundle: nil)
         tableView.register(missionHeaderCellNibName, forCellReuseIdentifier: MissionHeaderTableViewCell.nibId)
     }
-    @IBAction func createGroup(_ sender: Any) {
-       
-    }
 }
 
 extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -132,7 +129,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = tableView.cell(for: MissionHeaderTableViewCell.self)
         cell.sectionHeaderButton.addTarget(self, action: #selector(toGroup), for: .touchUpInside)
-        cell.groupTitleLabel.text = "sujinnaljin"
+        cell.groupTitleLabel.text = "2020 경찰 공무원"
         return cell
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -16,10 +16,10 @@ class AddGroupMemberCollectionViewCell: UICollectionViewCell, NibLoadable {
     private var row: Int?
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.profileImage.makeRounded()
         self.setButtonAttr()
     }
     func configure(row: Int, data: (member: String, image: String, index: Int)){
-        profileImage?.makeRounded()
         nameLabel?.text = data.member
         self.row = row
     }

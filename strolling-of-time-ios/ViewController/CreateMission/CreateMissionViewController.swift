@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreateMissionViewController: UIViewController, NibLoadable, KeyboardObserving {
+class CreateMissionViewController: UIViewController, NibLoadable {
 
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var titleTextField: UITextField!
@@ -42,7 +42,7 @@ class CreateMissionViewController: UIViewController, NibLoadable, KeyboardObserv
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
-        registerForKeyboardEvents()
+        hideKeyboarOnTap()
         setTextField()
     }
     func setNavigationBar() {

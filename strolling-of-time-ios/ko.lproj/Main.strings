@@ -1,0 +1,240 @@
+
+/* Class = "UITextField"; text = "10"; ObjectID = "1Pr-eA-xuE"; */
+"1Pr-eA-xuE.text" = "10";
+
+/* Class = "UILabel"; text = "함께 러닝으로 스트레스 확 날려버려요!"; ObjectID = "1VC-LX-AuH"; */
+"1VC-LX-AuH.text" = "함께 러닝으로 스트레스 확 날려버려요!";
+
+/* Class = "UILabel"; text = "김넥터"; ObjectID = "1hP-7F-qWq"; */
+"1hP-7F-qWq.text" = "김넥터";
+
+/* Class = "UILabel"; text = "함께하는 멤버 "; ObjectID = "2Xm-Kj-Y6p"; */
+"2Xm-Kj-Y6p.text" = "함께하는 멤버 ";
+
+/* Class = "UILabel"; text = "진행중 미션"; ObjectID = "33A-N5-er7"; */
+"33A-N5-er7.text" = "진행중 미션";
+
+/* Class = "UILabel"; text = "회원이 아니신가요?"; ObjectID = "36A-wX-E26"; */
+"36A-wX-E26.text" = "회원이 아니신가요?";
+
+/* Class = "UILabel"; text = "고운님"; ObjectID = "36v-J2-F50"; */
+"36v-J2-F50.text" = "고운님";
+
+/* Class = "UITextView"; text = "모임에 대한 간단한 설명을 작성해주세요"; ObjectID = "3Fs-Oi-AhB"; */
+"3Fs-Oi-AhB.text" = "모임에 대한 간단한 설명을 작성해주세요";
+
+/* Class = "UIBarButtonItem"; title = "X"; ObjectID = "3ur-1I-Cnl"; */
+"3ur-1I-Cnl.title" = "X";
+
+/* Class = "UITextField"; text = "1시간"; ObjectID = "4mr-x9-pz1"; */
+"4mr-x9-pz1.text" = "1시간";
+
+/* Class = "UILabel"; text = "4"; ObjectID = "4sl-7p-4c8"; */
+"4sl-7p-4c8.text" = "4";
+
+/* Class = "UINavigationItem"; title = "모임 만들기"; ObjectID = "6hL-43-WFq"; */
+"6hL-43-WFq.title" = "모임 만들기";
+
+/* Class = "UILabel"; text = "남은 시간"; ObjectID = "7KK-9a-ueJ"; */
+"7KK-9a-ueJ.text" = "남은 시간";
+
+/* Class = "UILabel"; text = "1일차"; ObjectID = "8oP-7m-zvE"; */
+"8oP-7m-zvE.text" = "1일차";
+
+/* Class = "UILabel"; text = "네글자만할"; ObjectID = "8wn-BS-dUm"; */
+"8wn-BS-dUm.text" = "네글자만할";
+
+/* Class = "UILabel"; text = "105%"; ObjectID = "95e-mv-Kdr"; */
+"95e-mv-Kdr.text" = "105%";
+
+/* Class = "UILabel"; text = "00:00:00"; ObjectID = "BHV-kh-izW"; */
+"BHV-kh-izW.text" = "00:00:00";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "DJW-8Q-lA7"; */
+"DJW-8Q-lA7.title" = " ";
+
+/* Class = "UILabel"; text = "09 : 32 : 12"; ObjectID = "E5N-bo-Svl"; */
+"E5N-bo-Svl.text" = "09 : 32 : 12";
+
+/* Class = "UILabel"; text = "참여 현황"; ObjectID = "Ea5-7K-ks0"; */
+"Ea5-7K-ks0.text" = "참여 현황";
+
+/* Class = "UITextField"; placeholder = "모임명"; ObjectID = "EeS-qa-jUQ"; */
+"EeS-qa-jUQ.placeholder" = "모임명";
+
+/* Class = "UILabel"; text = "멤버추가"; ObjectID = "Ejn-YL-CTT"; */
+"Ejn-YL-CTT.text" = "멤버추가";
+
+/* Class = "UILabel"; text = "활동 모임"; ObjectID = "HTd-Nq-jo6"; */
+"HTd-Nq-jo6.text" = "활동 모임";
+
+/* Class = "UILabel"; text = "0분"; ObjectID = "IFp-kh-4l4"; */
+"IFp-kh-4l4.text" = "0분";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "IuW-3O-Qbi"; */
+"IuW-3O-Qbi.text" = "10";
+
+/* Class = "UIButton"; normalTitle = "미션 만들기"; ObjectID = "JJF-Im-z1Z"; */
+"JJF-Im-z1Z.normalTitle" = "미션 만들기";
+
+/* Class = "UILabel"; text = "1시간 러닝"; ObjectID = "KCK-k7-t0S"; */
+"KCK-k7-t0S.text" = "1시간 러닝";
+
+/* Class = "UILabel"; text = "105%"; ObjectID = "LIc-yA-e7A"; */
+"LIc-yA-e7A.text" = "105%";
+
+/* Class = "UILabel"; text = "최대인원"; ObjectID = "MV8-RQ-whB"; */
+"MV8-RQ-whB.text" = "최대인원";
+
+/* Class = "UILabel"; text = "6"; ObjectID = "MYV-Cl-Ddh"; */
+"MYV-Cl-Ddh.text" = "6";
+
+/* Class = "UITextField"; placeholder = "비밀번호"; ObjectID = "NwG-28-9gh"; */
+"NwG-28-9gh.placeholder" = "비밀번호";
+
+/* Class = "UILabel"; text = "넥터 러닝 크루"; ObjectID = "Pbr-av-cCF"; */
+"Pbr-av-cCF.text" = "넥터 러닝 크루";
+
+/* Class = "UIButton"; normalTitle = "모임 만들기"; ObjectID = "Q75-X5-gr2"; */
+"Q75-X5-gr2.normalTitle" = "모임 만들기";
+
+/* Class = "UIButton"; normalTitle = "0명에게 초대링크 보내기"; ObjectID = "UeR-Eu-8an"; */
+"UeR-Eu-8an.normalTitle" = "0명에게 초대링크 보내기";
+
+/* Class = "UILabel"; text = "넥터 러닝 크루"; ObjectID = "Vys-12-Dh8"; */
+"Vys-12-Dh8.text" = "넥터 러닝 크루";
+
+/* Class = "UIButton"; normalTitle = "X"; ObjectID = "Wd5-eR-cgy"; */
+"Wd5-eR-cgy.normalTitle" = "X";
+
+/* Class = "UILabel"; text = "목표시간"; ObjectID = "Wmm-b7-ftT"; */
+"Wmm-b7-ftT.text" = "목표시간";
+
+/* Class = "UILabel"; text = "6"; ObjectID = "YsK-dA-EGp"; */
+"YsK-dA-EGp.text" = "6";
+
+/* Class = "UILabel"; text = "모임별 미션 보기"; ObjectID = "ZOW-RT-i0O"; */
+"ZOW-RT-i0O.text" = "모임별 미션 보기";
+
+/* Class = "UILabel"; text = "접기"; ObjectID = "ZcO-I2-Kpk"; */
+"ZcO-I2-Kpk.text" = "접기";
+
+/* Class = "UILabel"; text = "넥터 러닝 크루"; ObjectID = "Zlf-yB-9hf"; */
+"Zlf-yB-9hf.text" = "넥터 러닝 크루";
+
+/* Class = "UIButton"; normalTitle = "가입하기"; ObjectID = "Zxb-iF-cBw"; */
+"Zxb-iF-cBw.normalTitle" = "가입하기";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "aHS-HQ-Osu"; */
+"aHS-HQ-Osu.title" = " ";
+
+/* Class = "UILabel"; text = "%"; ObjectID = "axO-tp-CWc"; */
+"axO-tp-CWc.text" = "%";
+
+/* Class = "UILabel"; text = "시작일"; ObjectID = "b4Q-RA-dy6"; */
+"b4Q-RA-dy6.text" = "시작일";
+
+/* Class = "UIButton"; normalTitle = "로그인"; ObjectID = "cNm-CM-pJh"; */
+"cNm-CM-pJh.normalTitle" = "로그인";
+
+/* Class = "UILabel"; text = "종료일"; ObjectID = "e9R-zY-UT7"; */
+"e9R-zY-UT7.text" = "종료일";
+
+/* Class = "UIButton"; normalTitle = "미션 만들기"; ObjectID = "eCM-O6-5xd"; */
+"eCM-O6-5xd.normalTitle" = "미션 만들기";
+
+/* Class = "UILabel"; text = "김리얼"; ObjectID = "ely-2d-e2A"; */
+"ely-2d-e2A.text" = "김리얼";
+
+/* Class = "UIButton"; normalTitle = "계정 만들기"; ObjectID = "eps-cc-1ci"; */
+"eps-cc-1ci.normalTitle" = "계정 만들기";
+
+/* Class = "UITextField"; placeholder = "이메일"; ObjectID = "fHN-2X-fnA"; */
+"fHN-2X-fnA.placeholder" = "이메일";
+
+/* Class = "UITextField"; placeholder = "미션 설명을 입력하세요"; ObjectID = "fTb-2S-V17"; */
+"fTb-2S-V17.placeholder" = "미션 설명을 입력하세요";
+
+/* Class = "UITextField"; placeholder = "비밀번호"; ObjectID = "feH-8Z-J3V"; */
+"feH-8Z-J3V.placeholder" = "비밀번호";
+
+/* Class = "UIButton"; normalTitle = "편집하기"; ObjectID = "fsy-PL-Puw"; */
+"fsy-PL-Puw.normalTitle" = "편집하기";
+
+/* Class = "UITextField"; placeholder = "닉네임"; ObjectID = "gpP-fd-NjB"; */
+"gpP-fd-NjB.placeholder" = "닉네임";
+
+/* Class = "UIButton"; normalTitle = "모임 만들기"; ObjectID = "hzm-lw-oAJ"; */
+"hzm-lw-oAJ.normalTitle" = "모임 만들기";
+
+/* Class = "UILabel"; text = "멤버"; ObjectID = "i7r-T9-kET"; */
+"i7r-T9-kET.text" = "멤버";
+
+/* Class = "UILabel"; text = "공개"; ObjectID = "iaM-Ns-Y7D"; */
+"iaM-Ns-Y7D.text" = "공개";
+
+/* Class = "UITextField"; placeholder = "아이디"; ObjectID = "igQ-Aw-DS3"; */
+"igQ-Aw-DS3.placeholder" = "아이디";
+
+/* Class = "UINavigationItem"; title = "미션 만들기"; ObjectID = "k1I-8e-Qpg"; */
+"k1I-8e-Qpg.title" = "미션 만들기";
+
+/* Class = "UILabel"; text = "다른 멤버의 참여 현황"; ObjectID = "kNi-PB-FLk"; */
+"kNi-PB-FLk.text" = "다른 멤버의 참여 현황";
+
+/* Class = "UILabel"; text = "00:00:05"; ObjectID = "kiF-LL-G2I"; */
+"kiF-LL-G2I.text" = "00:00:05";
+
+/* Class = "UITextField"; placeholder = "설정 안됨"; ObjectID = "lNS-Va-YEd"; */
+"lNS-Va-YEd.placeholder" = "설정 안됨";
+
+/* Class = "UILabel"; text = "00:00:05"; ObjectID = "lUX-9V-roz"; */
+"lUX-9V-roz.text" = "00:00:05";
+
+/* Class = "UILabel"; text = "분류"; ObjectID = "mBo-7C-GTA"; */
+"mBo-7C-GTA.text" = "분류";
+
+/* Class = "UILabel"; text = "00:00:00"; ObjectID = "r3C-Ha-m7x"; */
+"r3C-Ha-m7x.text" = "00:00:00";
+
+/* Class = "UILabel"; text = "모임"; ObjectID = "rO4-un-wDs"; */
+"rO4-un-wDs.text" = "모임";
+
+/* Class = "UILabel"; text = "목표시간"; ObjectID = "ru7-lH-VCe"; */
+"ru7-lH-VCe.text" = "목표시간";
+
+/* Class = "UIBarButtonItem"; title = "X"; ObjectID = "sK6-gR-HxD"; */
+"sK6-gR-HxD.title" = "X";
+
+/* Class = "UITextField"; placeholder = "설정 안됨"; ObjectID = "uf6-3l-69D"; */
+"uf6-3l-69D.placeholder" = "설정 안됨";
+
+/* Class = "UITextField"; placeholder = "지정 안됨"; ObjectID = "um9-zm-Mhf"; */
+"um9-zm-Mhf.placeholder" = "지정 안됨";
+
+/* Class = "UINavigationItem"; title = "회원가입"; ObjectID = "ur4-6z-1xr"; */
+"ur4-6z-1xr.title" = "회원가입";
+
+/* Class = "UIBarButtonItem"; title = "X"; ObjectID = "vLT-gC-zFk"; */
+"vLT-gC-zFk.title" = "X";
+
+/* Class = "UILabel"; text = "총 집중시간"; ObjectID = "w2U-9G-7zT"; */
+"w2U-9G-7zT.text" = "총 집중시간";
+
+/* Class = "UILabel"; text = "로그인"; ObjectID = "wSM-x8-EDO"; */
+"wSM-x8-EDO.text" = "로그인";
+
+/* Class = "UILabel"; text = "참여 현황"; ObjectID = "xff-KH-rZA"; */
+"xff-KH-rZA.text" = "참여 현황";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "xyW-Jd-YcD"; */
+"xyW-Jd-YcD.title" = " ";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "y6l-Rt-VUy"; */
+"y6l-Rt-VUy.text" = "0";
+
+/* Class = "UILabel"; text = "네글자만할"; ObjectID = "ydh-cQ-KRM"; */
+"ydh-cQ-KRM.text" = "네글자만할";
+
+/* Class = "UILabel"; text = "안녕하세요"; ObjectID = "zjo-je-PaE"; */
+"zjo-je-PaE.text" = "안녕하세요";

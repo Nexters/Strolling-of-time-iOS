@@ -14,9 +14,11 @@ class AddGroupMemberTableViewCell: UITableViewCell, NibLoadable {
     @IBOutlet private weak var countLabel: UILabel?
     @IBOutlet private weak var profileImage: UIImageView?
     @IBOutlet private weak var checkImage: UIImageView?
+    override func awakeFromNib() {
+        profileImage?.makeRounded()
+    }
     
     func configure(data: (member: String, image: String, index: Int)){
-        profileImage?.makeRounded()
         nameLabel?.text = data.member
     }
 }

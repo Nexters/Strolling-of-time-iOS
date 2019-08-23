@@ -8,13 +8,14 @@
 
 import UIKit
 
-class JoinViewController: UIViewController, NibLoadable, KeyboardObserving {
+class JoinViewController: UIViewController, NibLoadable {
 
     // MARK: - Private
-    @IBOutlet private weak var profileImageView: UIImageView?
-    @IBOutlet private weak var idTextField: UITextField?
-    @IBOutlet private weak var pwdTextField: UITextField?
-    @IBOutlet private weak var nicknameTextField: UITextField?
+    @IBOutlet private weak var profileImageView: UIImageView!
+    @IBOutlet private weak var idTextField: UITextField!
+    @IBOutlet private weak var pwdTextField: UITextField!
+    @IBOutlet private weak var nicknameTextField: UITextField!
+    @IBOutlet weak var joinButton: UIButton!
     private lazy var picker: UIImagePickerController = {
         let picker = UIImagePickerController()
         picker.allowsEditing = true
@@ -33,11 +34,15 @@ class JoinViewController: UIViewController, NibLoadable, KeyboardObserving {
         }
         present(picker, animated: true)
     }
+    @IBAction func dismiss(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction private func join(_ sender: Any) {
         let id = idTextField?.text
         let pwd = pwdTextField?.text
         let nickname = nicknameTextField?.text
         print("통신 \(id) \(pwd) \(nickname)")
+        self.dismiss(animated: true, completion: nil)
     }
     override func viewDidLayoutSubviews() {
         self.setUI()
@@ -45,7 +50,22 @@ class JoinViewController: UIViewController, NibLoadable, KeyboardObserving {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        registerForKeyboardEvents()
+        hideKeyboarOnTap()
+        setTextField()
+    }
+    func setTextField() {
+        self.idTextField.delegate = self
+        self.pwdTextField.delegate = self
+        self.nicknameTextField.delegate = self
+    }
+    func isJoinButtonValid() -> Bool {
+        guard idTextField.text != "" && pwdTextField.text != "" && nicknameTextField?.text != "" else {
+            return false
+        }
+        return true
+    }
+    func setJoinButton() {
+        self.joinButton.setValidButton(isActive: isJoinButtonValid())
     }
 }
 // MARK: - ImagePickerController & NavigationController
@@ -55,5 +75,11 @@ extension JoinViewController: UIImagePickerControllerDelegate, UINavigationContr
             self.profileImageView?.image = image
         }
         self.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension JoinViewController: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.setJoinButton()
     }
 }

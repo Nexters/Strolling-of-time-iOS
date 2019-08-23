@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		11F7CEBD85298FD318EF2E6B /* Pods_strolling_of_time_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B29A72297AFFA8318532A32 /* Pods_strolling_of_time_ios.framework */; };
 		3B0D45A02302D88100842755 /* SF-Compact-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B0D459F2302D87900842755 /* SF-Compact-Text-Regular.otf */; };
-		3B1FD4D72307CEE4007C915C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FD4D62307CEE4007C915C /* InitialViewController.swift */; };
 		3B1FD4DB2307CEF5007C915C /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FD4DA2307CEF5007C915C /* JoinViewController.swift */; };
 		3B1FD4DD2307CEFB007C915C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FD4DC2307CEFB007C915C /* LoginViewController.swift */; };
 		3B1FD4DF2307D557007C915C /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FD4DE2307D557007C915C /* Storyboard.swift */; };
@@ -52,6 +51,9 @@
 		3B7F802C230AF664007BE63D /* AddGroupMemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F802B230AF664007BE63D /* AddGroupMemberTableViewCell.swift */; };
 		3B7F802E230AF66E007BE63D /* AddGroupMemberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F802D230AF66E007BE63D /* AddGroupMemberCollectionViewCell.swift */; };
 		3B7F8032230B1515007BE63D /* SendDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F8031230B1515007BE63D /* SendDataDelegate.swift */; };
+		3B7F803523100F28007BE63D /* MissionOtherMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F803423100F28007BE63D /* MissionOtherMemberViewController.swift */; };
+		3B7F803723101030007BE63D /* MissionOtherMemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F803623101030007BE63D /* MissionOtherMemberTableViewCell.swift */; };
+		3B7F803E23103598007BE63D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B7F804023103598007BE63D /* InfoPlist.strings */; };
 		3BE6EFB022FBF9D7007C46BF /* UIPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6EFAF22FBF9D7007C46BF /* UIPresentable.swift */; };
 		3BE6EFB222FBF9EE007C46BF /* AlertUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6EFB122FBF9EE007C46BF /* AlertUsable.swift */; };
 		3BE6EFB622FC0458007C46BF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6EFB522FC0458007C46BF /* MainViewController.swift */; };
@@ -91,7 +93,6 @@
 		1F8DA208D9774D91E67EDD49 /* Pods-strolling-of-time-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-iosTests/Pods-strolling-of-time-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		20515091B1C2AFED93597F18 /* Pods-strolling-of-time-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-strolling-of-time-ios.release.xcconfig"; path = "Target Support Files/Pods-strolling-of-time-ios/Pods-strolling-of-time-ios.release.xcconfig"; sourceTree = "<group>"; };
 		3B0D459F2302D87900842755 /* SF-Compact-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Regular.otf"; sourceTree = "<group>"; };
-		3B1FD4D62307CEE4007C915C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		3B1FD4DA2307CEF5007C915C /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		3B1FD4DC2307CEFB007C915C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3B1FD4DE2307D557007C915C /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
@@ -134,6 +135,12 @@
 		3B7F802B230AF664007BE63D /* AddGroupMemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupMemberTableViewCell.swift; sourceTree = "<group>"; };
 		3B7F802D230AF66E007BE63D /* AddGroupMemberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupMemberCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B7F8031230B1515007BE63D /* SendDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataDelegate.swift; sourceTree = "<group>"; };
+		3B7F803423100F28007BE63D /* MissionOtherMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionOtherMemberViewController.swift; sourceTree = "<group>"; };
+		3B7F803623101030007BE63D /* MissionOtherMemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionOtherMemberTableViewCell.swift; sourceTree = "<group>"; };
+		3B7F803A23103560007BE63D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		3B7F803B23103561007BE63D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3B7F803F23103598007BE63D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3B7F8041231035A2007BE63D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3BE6EFAF22FBF9D7007C46BF /* UIPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPresentable.swift; sourceTree = "<group>"; };
 		3BE6EFB122FBF9EE007C46BF /* AlertUsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUsable.swift; sourceTree = "<group>"; };
 		3BE6EFB522FC0458007C46BF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -194,14 +201,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B1FD4D52307CED6007C915C /* Initial */ = {
-			isa = PBXGroup;
-			children = (
-				3B1FD4D62307CEE4007C915C /* InitialViewController.swift */,
-			);
-			path = Initial;
-			sourceTree = "<group>";
-		};
 		3B1FD4D82307CEE6007C915C /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,8 +319,8 @@
 		3B6CBAA0230598EF004D7949 /* StopWatch */ = {
 			isa = PBXGroup;
 			children = (
-				3B6CBA9E230597D4004D7949 /* StopWatchModel.swift */,
 				3B6CBAA123059907004D7949 /* StopWatchViewController.swift */,
+				3B6CBA9E230597D4004D7949 /* StopWatchModel.swift */,
 			);
 			path = StopWatch;
 			sourceTree = "<group>";
@@ -343,6 +342,15 @@
 				3B7F802B230AF664007BE63D /* AddGroupMemberTableViewCell.swift */,
 			);
 			path = AddGroupMember;
+			sourceTree = "<group>";
+		};
+		3B7F803323100F09007BE63D /* MissionOtherMember */ = {
+			isa = PBXGroup;
+			children = (
+				3B7F803423100F28007BE63D /* MissionOtherMemberViewController.swift */,
+				3B7F803623101030007BE63D /* MissionOtherMemberTableViewCell.swift */,
+			);
+			path = MissionOtherMember;
 			sourceTree = "<group>";
 		};
 		3BE6EFB422FC044A007C46BF /* Main */ = {
@@ -396,16 +404,16 @@
 			isa = PBXGroup;
 			children = (
 				6BD7AD9722D4A2FC00F82F9B /* ViewController.swift */,
-				3B1FD4D52307CED6007C915C /* Initial */,
 				3B1FD4D82307CEE6007C915C /* Login */,
 				3B1FD4D92307CEED007C915C /* Join */,
-				3B6CBAA0230598EF004D7949 /* StopWatch */,
 				3BE6EFB422FC044A007C46BF /* Main */,
 				3B1FD50423083B64007C915C /* Group */,
 				3B1FD5302309BA21007C915C /* PastMission */,
 				3B1FD5332309C2EA007C915C /* CreateMission */,
 				3B7F801D230ADC38007BE63D /* CreateGroup */,
 				3B7F8028230AF423007BE63D /* AddGroupMember */,
+				3B6CBAA0230598EF004D7949 /* StopWatch */,
+				3B7F803323100F09007BE63D /* MissionOtherMember */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -421,6 +429,7 @@
 		6BD7AD8922D4A2FC00F82F9B = {
 			isa = PBXGroup;
 			children = (
+				3B7F804023103598007BE63D /* InfoPlist.strings */,
 				6BD7AD9422D4A2FC00F82F9B /* strolling-of-time-ios */,
 				6BD7ADA922D4A2FE00F82F9B /* strolling-of-time-iosTests */,
 				6BD7ADB422D4A2FE00F82F9B /* strolling-of-time-iosUITests */,
@@ -586,6 +595,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 6BD7AD8922D4A2FC00F82F9B;
 			productRefGroup = 6BD7AD9322D4A2FC00F82F9B /* Products */;
@@ -611,6 +621,7 @@
 				6BD7AD9B22D4A2FC00F82F9B /* Main.storyboard in Resources */,
 				3B1FD4FB23081A26007C915C /* NoMissionCell.xib in Resources */,
 				3B1FD4FD23081A2E007C915C /* MissionHeaderCell.xib in Resources */,
+				3B7F803E23103598007BE63D /* InfoPlist.strings in Resources */,
 				3B1FD50723083B84007C915C /* MissionFooterCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -766,14 +777,15 @@
 				6B1814D422D5F94300F97504 /* TimeUnit.swift in Sources */,
 				3B1FD50123081ACF007C915C /* MissionHeaderTableViewCell.swift in Sources */,
 				3B7F802C230AF664007BE63D /* AddGroupMemberTableViewCell.swift in Sources */,
+				3B7F803723101030007BE63D /* MissionOtherMemberTableViewCell.swift in Sources */,
 				3B1FD4E82307DC0E007C915C /* Networkable.swift in Sources */,
 				3B7F802E230AF66E007BE63D /* AddGroupMemberCollectionViewCell.swift in Sources */,
-				3B1FD4D72307CEE4007C915C /* InitialViewController.swift in Sources */,
 				3B1FD4EA2307DC14007C915C /* NetworkManager.swift in Sources */,
 				3B6CBA8923054185004D7949 /* GroupViewController.swift in Sources */,
 				3B1FD4E42307DBE7007C915C /* NetworkResult.swift in Sources */,
 				3B1FD4F22307E811007C915C /* Auth.swift in Sources */,
 				3BE6EFB222FBF9EE007C46BF /* AlertUsable.swift in Sources */,
+				3B7F803523100F28007BE63D /* MissionOtherMemberViewController.swift in Sources */,
 				3B1FD5322309BA3D007C915C /* PastMissionViewController.swift in Sources */,
 				3B7F8021230ADF14007BE63D /* CircleProgressView.swift in Sources */,
 				3B1FD50923083B9C007C915C /* MissionFooterTableViewCell.swift in Sources */,
@@ -822,10 +834,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3B7F804023103598007BE63D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B7F803F23103598007BE63D /* en */,
+				3B7F8041231035A2007BE63D /* ko */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		6BD7AD9922D4A2FC00F82F9B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6BD7AD9A22D4A2FC00F82F9B /* Base */,
+				3B7F803A23103560007BE63D /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -834,6 +856,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6BD7AD9F22D4A2FE00F82F9B /* Base */,
+				3B7F803B23103561007BE63D /* ko */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -845,6 +868,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -906,6 +930,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
